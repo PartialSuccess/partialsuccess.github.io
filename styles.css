@@ -154,27 +154,27 @@ h4 span {
 #roster table {
 	margin-left: 20px;
 }
-#roster .druid {
+.druid {
 	color: #ff7d00;
 }
-#roster .rogue {
+.rogue {
 	color: #fff569;
 }
-#roster .warlock {
+.warlock {
 	color: #8787ed;
 }
-#roster .warrior {
+.warrior {
 	color: #c79c6e;
 }
-#roster .priest {
+.priest {
 	color: #ffffff;
 }
-#roster .mage {
+.mage {
 	color: #40c7eb;
 }
-#roster .hunter {
+.hunter {
 	color: #abd473;
 }
-#roster .paladin {
+.paladin {
 	color: #f58cba;
 }
