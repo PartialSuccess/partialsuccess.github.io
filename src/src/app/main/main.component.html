@@ -1,0 +1,15 @@
+<p>main works!</p>
+
+<input type="text" (ngModelChange)="update($event)" />
+<table>
+    <tr>
+        <th></th>
+        <th>Player</th>
+        <th>Total</th>
+    </tr>
+   <tr *ngFor="let item of data">   <!-- [ngClass]="{ 'hasItem': item.hasItem }" -->
+        <td><img *ngIf="item.hasItem" src="assets/img/favicon.ico" width="20" /></td>
+        <td>{{ item.player }}</td>
+        <td>{{ item.total }}</td>
+    </tr>
+</table>
