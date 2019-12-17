@@ -1,15 +1,36 @@
 <p>main works!</p>
 
-<input type="text" (ngModelChange)="update($event)" />
+<input type="text" [(ngModel)]="target" (ngModelChange)="update($event)" />
 <table>
     <tr>
         <th></th>
         <th>Player</th>
+        <th>Total BIS</th>
+        <th>Total Free</th>
         <th>Total</th>
+        <th>Attendance</th>
+        <td>Ratio</td>
     </tr>
-   <tr *ngFor="let item of data">   <!-- [ngClass]="{ 'hasItem': item.hasItem }" -->
+    <tr *ngFor="let item of data" (click)="showPlayer(item.player)">
+        <!-- [ngClass]="{ 'hasItem': item.hasItem }" -->
         <td><img *ngIf="item.hasItem" src="assets/img/favicon.ico" width="20" /></td>
         <td>{{ item.player }}</td>
+        <td>{{ item.totalBis }}</td>
+        <td>{{ item.totalFree }}</td>
         <td>{{ item.total }}</td>
+        <td>{{ item.attendance }}</td>
+        <td>{{ item.ratio }}</td>
     </tr>
 </table>
+
+<div>
+    <div>{{player}}</div>
+    <table>
+        <tr>
+            <td>Item</td>
+        </tr>
+        <tr *ngFor="let item of playerLoot">
+            <td>{{item.name}}</td>
+        </tr>
+    </table>
+</div>

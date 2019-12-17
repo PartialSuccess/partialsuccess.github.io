@@ -1,4 +1,4 @@
-export const players = [
+export const ROSTER = [
     {
         name: 'Aelari',
         type: 'druid'
@@ -21,7 +21,7 @@ export const players = [
     },
     {
         name: 'Zetsumei',
-        type: 'marksman'
+        type: 'hunter'
     },
     {
         name: 'Roic',
@@ -81,7 +81,7 @@ export const players = [
     },
     {
         name: 'Feonier',
-        type: 'retribution'
+        type: 'warrior'
     },
     {
         name: 'Lumadin',
@@ -182,10 +182,6 @@ export const players = [
     {
         name: 'Fionic',
         type: 'paladin'
-    },
-    {
-        name: 'Boxcarhobo',
-        type: 'rogue'
     },
     {
         name: 'Dezverly',

@@ -1,4 +1,4 @@
-export const drops = [
+export const AVAILABLE_LOOT = [
     {
         name: 'Ancient Petrified Leaf',
         priority: ['hunter'],
@@ -64,7 +64,7 @@ export const drops = [
     },
     {
         name: 'Drillborer Disk',
-        priority: ['tank'],
+        priority: ['tank', 'warrior'],
         category: 'general',
         slot: 'weapon',
         quality: 'bis'
@@ -113,7 +113,7 @@ export const drops = [
     },
     {
         name: 'Obsidian Edged Blade',
-        priority: ['warrior'],
+        priority: ['warrior', 'paladin'],
         category: 'weapon',
         slot: 'weapon',
         quality: 'bis'
@@ -204,7 +204,7 @@ export const drops = [
     },
     {
         name: 'Heavy Dark Iron Ring',
-        priority: ['tank'],
+        priority: ['tank', 'feral', 'warrior'],
         category: 'general',
         slot: 'ring',
         quality: 'bis'
@@ -259,8 +259,22 @@ export const drops = [
         quality: 'bis'
     },
     {
+        name: 'Fireproof Cloak',
+        priority: ['tank'],
+        category: 'general',
+        slot: 'back',
+        quality: 'bis'
+    },
+    {
+        name: 'Coreforged Greaves',
+        priority: ['tank'],
+        category: 'general',
+        slot: 'feet',
+        quality: 'free'
+    },
+    {
         name: 'Cloak of the Shrouded Mists',
-        priority: ['hunter', 'tank'],
+        priority: ['hunter', 'tank', 'warrior'],
         category: 'general',
         slot: 'back',
         quality: 'bis'
@@ -614,7 +628,7 @@ export const drops = [
         priority: ['priest'],
         category: 'tier',
         slot: 'feet',
-        quality: 'bis'
+        quality: 'free'
     },
     {
         name: 'Circlet of Prophecy',
@@ -628,7 +642,7 @@ export const drops = [
         priority: ['priest'],
         category: 'tier',
         slot: 'waist',
-        quality: 'bis'
+        quality: 'free'
     },
     {
         name: 'Gloves of Prophecy',

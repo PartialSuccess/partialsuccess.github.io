@@ -1,4 +1,18 @@
-export const loot = [
+export const DROPPED_LOOT = [
+    {
+        raid: 0,
+        loot: [
+            {
+                name: 'The Eye of Divinity',
+                recipient: 'Gried',
+                source: 'Majordomo'
+            }, {
+                recipient: 'Delos',
+                name: 'Eskhandar\'s Right Claw',
+                source: 'Magmadar'
+            }
+        ]
+    },
     {
         raid: 1,
         loot: [
@@ -31,6 +45,11 @@ export const loot = [
                 name: 'Cenarion Helm',
                 recipient: 'Alprazolam',
                 source: 'Garr'
+            },
+            {
+                recipient: 'Vick',
+                name: 'Heavy Dark Iron Ring',
+                source: 'Gehennas'
             },
             {
                 name: 'Lawbringer Spaulders',
@@ -117,8 +136,6 @@ export const loot = [
                 recipient: 'Bubblygrailz',
                 source: 'Lucifron'
             },
-
-
             {
                 recipient: 'Delos',
                 name: 'Medallion of Steadfast Might',
@@ -196,7 +213,7 @@ export const loot = [
             },
             {
                 recipient: 'Selnath',
-                name: 'Cenario Vestments',
+                name: 'Cenarion Vestments',
                 source: 'Golemagg'
             },
             {
@@ -214,11 +231,6 @@ export const loot = [
                 name: 'Thunderstrike',
                 source: 'Harbinger'
             },
-
-
-
-
-
             {
                 recipient: 'Jarne',
                 name: 'Finkle\'s Lava Dredger',
@@ -241,7 +253,7 @@ export const loot = [
             },
             {
                 recipient: 'Pwent',
-                name: 'Choker of the Firelord',
+                name: 'Choker of the Fire Lord',
                 source: 'Ragnaros'
             }
         ]
@@ -401,7 +413,7 @@ export const loot = [
             },
             {
                 recipient: 'Dress',
-                name: 'Choker of the Firelord',
+                name: 'Choker of the Fire Lord',
                 source: 'Ragnaros'
             },
             {
@@ -546,7 +558,7 @@ export const loot = [
             },
             {
                 recipient: 'Helinos',
-                name: 'Choker of the Firelord',
+                name: 'Choker of the Fire Lord',
                 source: 'Ragnaros'
             },
             {
@@ -1161,7 +1173,7 @@ export const loot = [
             },
             {
                 recipient: 'Fionic',
-                name: 'Bracers of Might',
+                name: 'Lawbringer Belt',
                 source: 'Trash'
             },
             {
