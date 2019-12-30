@@ -40,7 +40,7 @@ export class MainComponent implements OnInit {
     public playerLoot = [];
 
     public ngOnInit() {
-        this.update('belt of might');
+        this.update('perdition\'s blade');
         this.showPlayer('Delos');
     }
 

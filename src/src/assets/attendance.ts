@@ -120,9 +120,7 @@ export const ATTENDANCE = [
             { name: 'Vick' },
             { name: 'Wander' },
             { name: 'Xinghua' },
-            {
-                name: 'Zetsumei'
-            }
+            { name: 'Zetsumei' }
         ]
     }, {
         date: '11/03/2019',
@@ -664,6 +662,51 @@ export const ATTENDANCE = [
             { name: 'Serethiel' },
             { name: 'Sproles' },
             { name: 'Taggart' },
+            { name: 'Vicca' },
+            { name: 'Vick' },
+            { name: 'Wander' },
+            { name: 'Xinghua' },
+            { name: 'Zetsumei' }
+        ]
+    }, {
+        date: '12/17/2019',
+        raid: 'Molten Core',
+        players: [
+            { name: 'Abraham' },
+            { name: 'Aelari' },
+            { name: 'Alonsur' },
+            { name: 'Begrungi' },
+            { name: 'Bubblygrailz' },
+            { name: 'Burningman' },
+            { name: 'Daryl' },
+            { name: 'Doruga' },
+            { name: 'Dress' },
+            { name: 'Falaris' },
+            { name: 'Fellord' },
+            { name: 'Feonier' },
+            { name: 'Forcedawg' },
+            { name: 'Gried' },
+            { name: 'Grovee' },
+            { name: 'Helinos' },
+            { name: 'Horon' },
+            { name: 'Icescreamer' },
+            { name: 'Immortal' },
+            { name: 'Jarett' },
+            { name: 'Jbaum' },
+            { name: 'Kelharath' },
+            { name: 'Knaz' },
+            { name: 'Meowntain' },
+            { name: 'Minerva' },
+            { name: 'Pwent' },
+            { name: 'Quippie' },
+            { name: 'Rhonto' },
+            { name: 'Roic' },
+            { name: 'Selnath' },
+            { name: 'Serethiel' },
+            { name: 'Sproggle' },
+            { name: 'Sproles' },
+            { name: 'Taggart' },
+            { name: 'Talate' },
             { name: 'Vicca' },
             { name: 'Vick' },
             { name: 'Wander' },

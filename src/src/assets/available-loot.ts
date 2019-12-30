@@ -88,7 +88,7 @@ export const AVAILABLE_LOOT = [
         priority: ['paladin', 'druid'],
         category: 'weapon',
         slot: 'weapon',
-        quality: 'free'
+        quality: 'meme'
     },
     {
         name: 'Fire Runed Grimoire',
@@ -147,7 +147,7 @@ export const AVAILABLE_LOOT = [
         quality: 'bis'
     },
     {
-        name: 'Strikers Mark',
+        name: 'Striker\'s Mark',
         priority: ['warrior', 'rogue'],
         category: 'weapon',
         slot: 'weapon',
@@ -172,7 +172,7 @@ export const AVAILABLE_LOOT = [
         priority: ['hunter', 'warrior'],
         category: 'weapon',
         slot: 'weapon',
-        quality: 'free'
+        quality: 'meme'
     },
     {
         name: 'Band of Accuria',
@@ -192,14 +192,14 @@ export const AVAILABLE_LOOT = [
         name: 'Choker of Enlightenment',
         priority: ['caster'],
         category: 'general',
-        slot: 'amulet',
+        slot: 'neck',
         quality: 'bis'
     },
     {
         name: 'Choker of the Fire Lord',
         priority: ['caster', 'healer'],
         category: 'general',
-        slot: 'amulet',
+        slot: 'neck',
         quality: 'bis'
     },
     {
@@ -213,7 +213,7 @@ export const AVAILABLE_LOOT = [
         name: 'Medallion of Steadfast Might',
         priority: ['tank', 'feral'],
         category: 'general',
-        slot: 'amulet',
+        slot: 'neck',
         quality: 'bis'
     },
     {
@@ -873,6 +873,118 @@ export const AVAILABLE_LOOT = [
         priority: ['warrior'],
         category: 'tier',
         slot: 'legs',
+        quality: 'bis'
+    },
+    {
+        name: 'Helm of Wrath',
+        priority: ['warrior'],
+        category: 'tier',
+        slot: 'head',
+        quality: 'bis'
+    },
+	{
+        name: 'Halo of Transcendence',
+        priority: ['priest'],
+        category: 'tier',
+        slot: 'head',
+        quality: 'bis'
+    },
+	{
+        name: 'Bloodfang Hood',
+        priority: ['rogue'],
+        category: 'tier',
+        slot: 'head',
+        quality: 'bis'
+    },
+	{
+        name: 'Netherwind Crown',
+        priority: ['mage'],
+        category: 'tier',
+        slot: 'head',
+        quality: 'bis'
+    },
+	{
+        name: 'Nemesis Skullcap',
+        priority: ['warlock'],
+        category: 'tier',
+        slot: 'head',
+        quality: 'bis'
+    },
+	{
+        name: 'Dragonstalker\'s Helm',
+        priority: ['hunter'],
+        category: 'tier',
+        slot: 'head',
+        quality: 'bis'
+    },
+	{
+        name: 'Stormrage Cover',
+        priority: ['druid'],
+        category: 'tier',
+        slot: 'head',
+        quality: 'bis'
+    },
+	{
+        name: 'Judgement Crown',
+        priority: ['paladin'],
+        category: 'tier',
+        slot: 'head',
+        quality: 'bis'
+    },
+	{
+        name: 'Ancient Cornerstone Grimoire',
+        priority: ['caster'],
+        category: 'general',
+        slot: 'offhand',
+        quality: 'free'
+    },
+	{
+        name: 'Deathbringer',
+        priority: ['warrior'],
+        category: 'weapon',
+        slot: 'weapon',
+        quality: 'bis'
+    },
+	{
+        name: 'Vis\'kag the Bloodletter',
+        priority: ['melee'],
+        category: 'weapon',
+        slot: 'weapon',
+        quality: 'bis'
+    },
+	{
+        name: 'Eskhandar\'s Collar',
+        priority: ['tank'],
+        category: 'general',
+        slot: 'neck',
+        quality: 'free'
+    },
+	{
+        name: 'Ring of Binding',
+        priority: ['warrior'],
+        category: 'general',
+        slot: 'neck',
+        quality: 'free'
+    },
+	{
+        name: 'Sapphiron Drape',
+        priority: ['caster'],
+        category: 'general',
+        slot: 'back',
+        quality: 'free'
+    },
+	{
+        name: 'Shard of the Scale',
+        priority: ['healer'],
+        category: 'general',
+        slot: 'trinket',
+        quality: 'bis'
+    },
+	{
+        name: 'Head of Onyxia',
+        priority: ['melee'],
+        category: 'general',
+        slot: 'neck',
         quality: 'bis'
     }
 ];

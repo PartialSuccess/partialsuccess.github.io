@@ -1,6 +1,6 @@
 export const DROPPED_LOOT = [
     {
-        raid: 0,
+        raid: 'Unknown',
         loot: [
             {
                 name: 'The Eye of Divinity',
@@ -10,11 +10,40 @@ export const DROPPED_LOOT = [
                 recipient: 'Delos',
                 name: 'Eskhandar\'s Right Claw',
                 source: 'Magmadar'
-            }
+            }, {
+                recipient: 'Meowntain',
+                name: 'Nightslayer Gloves',
+                source: 'Gehennas'
+            }, {
+                recipient: 'Meowntain',
+                name: 'Nightslayer Shoulder Pads',
+                source: 'Harbinger'
+            }, {
+                recipient: 'Meowntain',
+                name: 'Nightslayer Chestpiece',
+                source: 'Harbinger'
+            }, {
+                recipient: 'Roic',
+                name: 'Dragonstalker\'s Legguards',
+                source: 'Ragnaros'
+            }, {
+                recipient: 'Roic',
+                name: 'Giantstalker\'s Bracers',
+                source: 'Trash'
+            }, {
+                recipient: 'Quippie',
+                name: 'Nemesis Skullcap',
+                source: 'Onyxia'
+            }, {
+                recipient: 'Taldia',
+                name: 'Stormrage Cover',
+                source: 'Onyxia'
+            },
         ]
     },
     {
-        raid: 1,
+        date: '10/2/2019',
+        raid: 'Molten Core',
         loot: [
             {
                 name: 'Cenarion Bracers',
@@ -84,7 +113,8 @@ export const DROPPED_LOOT = [
         ]
     },
     {
-        raid: 2,
+        date: '10/22/2019',
+        raid: 'Molten Core',
         loot: [
             {
                 name: 'Belt of Might',
@@ -259,7 +289,8 @@ export const DROPPED_LOOT = [
         ]
     },
     {
-        raid: 3,
+        date: '10/29/2019',
+        raid: 'Molten Core',
         loot: [
             {
                 recipient: 'Selnath',
@@ -424,7 +455,8 @@ export const DROPPED_LOOT = [
         ]
     },
     {
-        raid: 4,
+        date: '11/06/2019',
+        raid: 'Molten Core',
         loot: [
             {
                 recipient: 'Icescreamer',
@@ -569,7 +601,8 @@ export const DROPPED_LOOT = [
         ]
     },
     {
-        raid: 5,
+        date: '11/12/2019',
+        raid: 'Molten Core',
         loot: [
             {
                 recipient: 'Burningman',
@@ -714,7 +747,8 @@ export const DROPPED_LOOT = [
         ]
     },
     {
-        raid: 6,
+        date: '11/19/2019',
+        raid: 'Molten Core',
         loot: [
             {
                 recipient: 'Dondante',
@@ -854,7 +888,8 @@ export const DROPPED_LOOT = [
         ]
     },
     {
-        raid: 7,
+        date: '11/26/2019',
+        raid: 'Molten Core',
         loot: [
             {
                 recipient: 'Quippie',
@@ -999,7 +1034,8 @@ export const DROPPED_LOOT = [
         ]
     },
     {
-        raid: 8,
+        date: '12/03/2019',
+        raid: 'Molten Core',
         loot: [
             {
                 recipient: 'Meowntain',
@@ -1159,11 +1195,12 @@ export const DROPPED_LOOT = [
         ]
     },
     {
-        raid: 9,
+        date: '12/10/2019',
+        raid: 'Molten Core',
         loot: [
             {
                 recipient: 'Delos',
-                name: 'Nightstalker\'s Wristguards',
+                name: 'Belt of Might',
                 source: 'Trash'
             },
             {
@@ -1307,6 +1344,564 @@ export const DROPPED_LOOT = [
                 source: 'Ragnaros'
             }
         ]
-    }
+    },
+    {
+        date: '12/17/2019',
+        raid: 'Molten Core',
+        loot: [
+            {
+                recipient: 'Delos',
+                name: 'Bracers of Might',
+                source: 'Trash'
+            },
+            {
+                recipient: 'Sproles',
+                name: 'Nightslayer Bracelets',
+                source: 'Trash'
+            },
+            {
+                recipient: 'Talate',
+                name: 'Nightslayer Bracelets',
+                source: 'Trash'
+            },
+            {
+                recipient: 'Vicca',
+                name: 'Felheart Gloves',
+                source: 'Lucifron'
+            },
+            {
+                recipient: 'Pwent',
+                name: 'Felheart Gloves',
+                source: 'Lucifron'
+            },
+            {
+                recipient: 'Taggart',
+                name: 'Lawbringer Boots',
+                source: 'Lucifron'
+            },
+            {
+                recipient: 'Rhonto',
+                name: 'Cenarion Leggings',
+                source: 'Magmadar'
+            },
+            {
+                recipient: 'Pwent',
+                name: 'Felheart Pants',
+                source: 'Magmadar'
+            },
+            {
+                recipient: 'Dress',
+                name: 'Mana Igniting Cord',
+                source: 'Magmadar'
+            },
+            {
+                recipient: 'Abraham',
+                name: 'Flamewalker Legplates',
+                source: 'Gehennas'
+            },
+            {
+                recipient: 'Bubblygrailz',
+                name: 'Arcanist Crown',
+                source: 'Garr'
+            },
+            {
+                recipient: 'Meowntain',
+                name: 'Agred Core Leather Gloves',
+                source: 'Garr'
+            },
+            {
+                recipient: 'Jbaum',
+                name: 'Felheart Shoulder Pads',
+                source: 'Baron Geddon'
+            },
+            {
+                recipient: 'Disenchant',
+                name: 'Lawbringer Spaulders',
+                source: 'Baron Geddon'
+            },
+            {
+                recipient: 'Selnath',
+                name: 'Cenarion Gloves',
+                source: 'Shazzrah'
+            },
+            {
+                recipient: 'Sproles',
+                name: 'Nightslayer Boots',
+                source: 'Shazzrah'
+            },
+            {
+                recipient: 'Jarett',
+                name: 'Breastplate of Might',
+                source: 'Golemagg'
+            },
+            {
+                recipient: 'Fellord',
+                name: 'Felheart Robes',
+                source: 'Golemagg'
+            },
+            {
+                recipient: 'Pwent',
+                name: 'Staff of Dominance',
+                source: 'Golemagg'
+            },
+            {
+                recipient: 'Grovee',
+                name: 'Nightslayer Shoulder Pads',
+                source: 'Harbinger'
+            },
+            {
+                recipient: 'Sproggle',
+                name: 'Cauterizing Band',
+                source: 'Majordomo'
+            },
+            {
+                recipient: 'Vick',
+                name: 'Fireguard Shoulders',
+                source: 'Majordomo'
+            },
+            {
+                recipient: 'Qupipie',
+                name: 'Nemesis Leggings',
+                source: 'Ragnaros'
+            },
+            {
+                recipient: 'Alonsur',
+                name: 'Judgement Legplates',
+                source: 'Ragnaros'
+            },
+            {
+                recipient: 'Selnath',
+                name: 'Dragon\'s Blood Cape',
+                source: 'Ragnaros'
+            },
+            {
+                recipient: 'Meowntain',
+                name: 'Perdition\'s Blade',
+                source: 'Ragnaros'
+            }
+        ]
+    },
+    {
+        date: '10/27/2019',
+        raid: 'Onyxia',
+        loot: [
+            {
+                recipient: 'Boxcarhobo',
+                name: 'Bloodfang Hood',
+                source: 'Onyxia'
+            },
+            {
+                recipient: 'Vick',
+                name: 'Helm of Wrath',
+                source: 'Onyxia'
+            },
+            {
+                recipient: 'Grovee',
+                name: 'Onyxia Hide Backpack',
+                source: 'Onyxia'
+            },
+            {
+                recipient: 'Minerva',
+                name: 'Onyxia Hide Backpack',
+                source: 'Onyxia'
+            },
+            {
+                recipient: 'Xinghua',
+                name: 'Eskhandar\'s Collar',
+                source: 'Onyxia'
+            }
+		]
+	},
+    {
+        date: '11/03/2019',
+        raid: 'Onyxia',
+        loot: [
+            {
+                recipient: 'Pwent',
+                name: 'Nemesis Skullcap',
+                source: 'Onyxia'
+            },
+            {
+                recipient: 'Grovee',
+                name: 'Bloodfang Hood',
+                source: 'Onyxia'
+            },
+            {
+                recipient: 'Falaris',
+                name: 'Head of Onyxia',
+                source: 'Onyxia'
+            },
+            {
+                recipient: 'Zetsumei',
+                name: 'Mature Black Dragon Sinew',
+                source: 'Onyxia'
+            },
+            {
+                recipient: 'Helinos',
+                name: 'Onyxia Hide Backpack',
+                source: 'Onyxia'
+            },
+            {
+                recipient: 'Pwent',
+                name: 'Sapphiron Drape',
+                source: 'Onyxia'
+            }
+		]
+	},
+    {
+        date: '11/06/2019',
+        raid: 'Onyxia',
+        loot: [
+            {
+                recipient: 'Falaris',
+                name: 'Bloodfang Hood',
+                source: 'Onyxia'
+            },
+            {
+                recipient: 'Nitro',
+                name: 'Netherwind Crown',
+                source: 'Onyxia'
+            },
+            {
+                recipient: 'Begrungi',
+                name: 'Head of Onyxia',
+                source: 'Onyxia'
+            },
+            {
+                recipient: 'Harbard',
+                name: 'Mature Black Dragon Sinew',
+                source: 'Onyxia'
+            },
+            {
+                recipient: 'Helinos',
+                name: 'Onyxia Hide Backpack',
+                source: 'Onyxia'
+            },
+            {
+                recipient: 'Jarett',
+                name: 'Eskhandar\'s Collar',
+                source: 'Onyxia'
+            }
+		]
+	},
+    {
+        date: '11/13/2019',
+        raid: 'Onyxia',
+        loot: [
+            {
+                recipient: 'Harbard',
+                name: 'Dragonstalker\'s Helm',
+                source: 'Onyxia'
+            },
+            {
+                recipient: 'Doruga',
+                name: 'Dragonstalker\'s Helm',
+                source: 'Onyxia'
+            },
+            {
+                recipient: 'Serethiel',
+                name: 'Head of Onyxia',
+                source: 'Onyxia'
+            },
+            {
+                recipient: 'Lumadin',
+                name: 'Onyxia Hide Backpack',
+                source: 'Onyxia'
+            },
+            {
+                recipient: 'Jbaum',
+                name: 'Onyxia Hide Backpack',
+                source: 'Onyxia'
+            },
+            {
+                recipient: 'Helinos',
+                name: 'Ancient Cornerstone Grimoire',
+                source: 'Onyxia'
+            }
+		]
+	},
+    {
+        date: '11/17/2019',
+        raid: 'Onyxia',
+        loot: [
+            {
+                recipient: 'Lumadin',
+                name: 'Judgement Crown',
+                source: 'Onyxia'
+            },
+            {
+                recipient: 'Minerva',
+                name: 'Stormrage Cover',
+                source: 'Onyxia'
+            },
+            {
+                recipient: 'Daryl',
+                name: 'Head of Onyxia',
+                source: 'Onyxia'
+            },
+            {
+                recipient: 'Jbaum',
+                name: 'Onyxia Hide Backpack',
+                source: 'Onyxia'
+            },
+            {
+                recipient: 'Abraham',
+                name: 'Eskhandar\'s Collar',
+                source: 'Onyxia'
+            }
+		]
+	},
+    {
+        date: '11/24/2019',
+        raid: 'Onyxia',
+        loot: [
+            {
+                recipient: 'Knaz',
+                name: 'Bloodfang Hood',
+                source: 'Onyxia'
+            },
+            {
+                recipient: 'Bubblygrailz',
+                name: 'Netherwind Crown',
+                source: 'Onyxia'
+            },
+            {
+                recipient: 'Immortal',
+                name: 'Head of Onyxia',
+                source: 'Onyxia'
+            },
+            {
+                recipient: 'Dondante',
+                name: 'Mature Black Dragon Sinew',
+                source: 'Onyxia'
+            },
+            {
+                recipient: 'Alonsur',
+                name: 'Onyxia Hide Backpack',
+                source: 'Onyxia'
+            },
+            {
+                recipient: 'Serethiel',
+                name: 'Onyxia Hide Backpack',
+                source: 'Onyxia'
+            },
+            {
+                recipient: 'Charmander',
+                name: 'Ancient Cornerstone Grimoire',
+                source: 'Onyxia'
+            },
+            {
+                recipient: 'Grovee',
+                name: 'Vis\'kag the Bloodletter',
+                source: 'Onyxia'
+            }
+		]
+	},
+    {
+        date: '11/26/2019',
+        raid: 'Onyxia',
+        loot: [
+            {
+                recipient: 'Delos',
+                name: 'Helm of Wrath',
+                source: 'Onyxia'
+            },
+            {
+                recipient: 'Xinghua',
+                name: 'Helm of Wrath',
+                source: 'Onyxia'
+            },
+            {
+                recipient: 'Abraham',
+                name: 'Head of Onyxia',
+                source: 'Onyxia'
+            },
+            {
+                recipient: 'Doruga',
+                name: 'Mature Black Dragon Sinew',
+                source: 'Onyxia'
+            },
+            {
+                recipient: 'Helinos',
+                name: 'Onyxia Hide Backpack',
+                source: 'Onyxia'
+            },
+            {
+                recipient: 'Kelharath',
+                name: 'Eskhandar\'s Collar',
+                source: 'Onyxia'
+            }
+		]
+	},
+    {
+        date: '12/01/2019',
+        raid: 'Onyxia',
+        loot: [
+            {
+                recipient: 'Roic',
+                name: 'Dragonstalker\'s Helm',
+                source: 'Onyxia'
+            },
+            {
+                recipient: 'Meowntain',
+                name: 'Bloodfang Hood',
+                source: 'Onyxia'
+            },
+            {
+                recipient: 'Rhonto',
+                name: 'Head of Onyxia',
+                source: 'Onyxia'
+            },
+            {
+                recipient: 'Alonsur',
+                name: 'Onyxia Hide Backpack',
+                source: 'Onyxia'
+            },
+            {
+                recipient: 'Sproggle',
+                name: 'Ancient Cornerstone Grimoire',
+                source: 'Onyxia'
+            }
+		]
+	},
+    {
+        date: '12/08/2019',
+        raid: 'Onyxia',
+        loot: [
+            {
+                recipient: 'Jbaum',
+                name: 'Nemesis Skullcap',
+                source: 'Onyxia'
+            },
+            {
+                recipient: 'Abraham',
+                name: 'Helm of Wrath',
+                source: 'Onyxia'
+            },
+            {
+                recipient: 'Delos',
+                name: 'Head of Onyxia',
+                source: 'Onyxia'
+            },
+            {
+                recipient: 'Serethiel',
+                name: 'Onyxia Hide Backpack',
+                source: 'Onyxia'
+            },
+            {
+                recipient: 'Helinos',
+                name: 'Sapphiron Drape',
+                source: 'Onyxia'
+            },
+            {
+                recipient: 'Sproggle',
+                name: 'Ancient Cornerstone Grimoire',
+                source: 'Onyxia'
+            }
+		]
+	},
+    {
+        date: '12/11/2019',
+        raid: 'Onyxia',
+        loot: [
+            {
+                recipient: 'Sproles',
+                name: 'Bloodfang Hood',
+                source: 'Onyxia'
+            },
+            {
+                recipient: 'Gurkel',
+                name: 'Netherwind Crown',
+                source: 'Onyxia'
+            },
+            {
+                recipient: 'Jarett',
+                name: 'Head of Onyxia',
+                source: 'Onyxia'
+            },
+            {
+                recipient: 'Minerva',
+                name: 'Onyxia Hide Backpack',
+                source: 'Onyxia'
+            },
+            {
+                recipient: 'Vick',
+                name: 'Ring of Binding',
+                source: 'Onyxia'
+            }
+		]
+	},
+    {
+        date: '12/17/2019',
+        raid: 'Onyxia',
+        loot: [
+            {
+                recipient: 'Begrungi',
+                name: 'Helm of Wrath',
+                source: 'Onyxia'
+            },
+            {
+                recipient: 'Daryl',
+                name: 'Helm of Wrath',
+                source: 'Onyxia'
+            },
+            {
+                recipient: 'Immortal',
+                name: 'Onyxia Hide Backpack',
+                source: 'Onyxia'
+            },
+            {
+                recipient: 'Begrungi',
+                name: 'Onyxia Hide Backpack',
+                source: 'Onyxia'
+            },
+            {
+                recipient: 'Bubblygrailz',
+                name: 'Onyxia Hide Backpack',
+                source: 'Onyxia'
+            },
+            {
+                recipient: 'Freakindots',
+                name: 'Sapphiron Drape',
+                source: 'Onyxia'
+            },
+            {
+                recipient: 'Selnath',
+                name: 'Eskhandar\'s Collar',
+                source: 'Onyxia'
+            }
+		]
+	},
+    {
+        date: '12/22/2019',
+        raid: 'Onyxia',
+        loot: [
+            {
+                recipient: 'Taggart',
+                name: 'Judgement Crown',
+                source: 'Onyxia'
+            },
+            {
+                recipient: 'Charmander',
+                name: 'Halo of Transcendence',
+                source: 'Onyxia'
+            },
+            {
+                recipient: 'Meowntain',
+                name: 'Head of Onyxia',
+                source: 'Onyxia'
+            },
+            {
+                recipient: 'Helinos',
+                name: 'Onyxia Hide Backpack',
+                source: 'Onyxia'
+            },
+            {
+                recipient: 'Talate',
+                name: 'Eskhandar\'s Collar',
+                source: 'Onyxia'
+            }
+		]
+	}
 ];
 
