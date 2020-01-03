@@ -37,7 +37,7 @@ export const AVAILABLE_LOOT = [
     {
         name: 'Blastershot Launcher',
         priority: ['rogue', 'warrior'],
-        category: 'weapon',
+        category: 'general',
         slot: 'weapon',
         quality: 'bis'
     },
@@ -74,21 +74,21 @@ export const AVAILABLE_LOOT = [
         priority: ['warrior'],
         category: 'weapon',
         slot: 'weapon',
-        quality: 'bis'
+        quality: 'free'
     },
     {
         name: 'Eskhandar\'s Right Claw',
         priority: ['melee'],
         category: 'weapon',
         slot: 'weapon',
-        quality: 'bis'
+        quality: 'free'
     },
     {
         name: 'Finkle\'s Lava Dredger',
         priority: ['paladin', 'druid'],
         category: 'weapon',
         slot: 'weapon',
-        quality: 'meme'
+        quality: 'free'
     },
     {
         name: 'Fire Runed Grimoire',
@@ -116,7 +116,7 @@ export const AVAILABLE_LOOT = [
         priority: ['warrior', 'paladin'],
         category: 'weapon',
         slot: 'weapon',
-        quality: 'bis'
+        quality: 'free'
     },
     {
         name: 'Perdition\'s Blade',
@@ -137,7 +137,7 @@ export const AVAILABLE_LOOT = [
         priority: ['warrior'],
         category: 'weapon',
         slot: 'weapon',
-        quality: 'bis'
+        quality: 'free'
     },
     {
         name: 'Staff of Dominance',
@@ -177,14 +177,14 @@ export const AVAILABLE_LOOT = [
     {
         name: 'Band of Accuria',
         priority: ['tank', 'melee'],
-        category: 'ring',
+        category: 'general',
         slot: 'ring',
         quality: 'bis'
     },
     {
         name: 'Cauterizing Band',
         priority: ['healer'],
-        category: 'ring',
+        category: 'general',
         slot: 'ring',
         quality: 'bis'
     },
@@ -226,7 +226,7 @@ export const AVAILABLE_LOOT = [
     {
         name: 'Ring of Spell Power',
         priority: ['caster'],
-        category: 'ring',
+        category: 'general',
         slot: 'ring',
         quality: 'bis'
     },
@@ -238,7 +238,7 @@ export const AVAILABLE_LOOT = [
         quality: 'bis'
     },
     {
-        name: 'Ring of the Archmagus',
+        name: 'Seal of the Archmagus',
         priority: ['caster', 'healer'],
         category: 'general',
         slot: 'ring',
@@ -266,7 +266,7 @@ export const AVAILABLE_LOOT = [
         quality: 'bis'
     },
     {
-        name: 'Coreforged Greaves',
+        name: 'Core Forged Greaves',
         priority: ['tank'],
         category: 'general',
         slot: 'feet',
@@ -617,7 +617,7 @@ export const AVAILABLE_LOOT = [
         quality: 'free'
     },
     {
-        name: 'Judgement Legguards',
+        name: 'Judgement Legplates',
         priority: ['paladin'],
         category: 'tier',
         slot: 'legs',
@@ -729,10 +729,10 @@ export const AVAILABLE_LOOT = [
         quality: 'bis'
     },
     {
-        name: 'Nightslayer Cover',
+        name: 'Nightslayer Pants',
         priority: ['rogue'],
         category: 'tier',
-        slot: 'head',
+        slot: 'legs',
         quality: 'bis'
     },
     {
@@ -882,105 +882,105 @@ export const AVAILABLE_LOOT = [
         slot: 'head',
         quality: 'bis'
     },
-	{
+    {
         name: 'Halo of Transcendence',
         priority: ['priest'],
         category: 'tier',
         slot: 'head',
         quality: 'bis'
     },
-	{
+    {
         name: 'Bloodfang Hood',
         priority: ['rogue'],
         category: 'tier',
         slot: 'head',
         quality: 'bis'
     },
-	{
+    {
         name: 'Netherwind Crown',
         priority: ['mage'],
         category: 'tier',
         slot: 'head',
         quality: 'bis'
     },
-	{
+    {
         name: 'Nemesis Skullcap',
         priority: ['warlock'],
         category: 'tier',
         slot: 'head',
         quality: 'bis'
     },
-	{
+    {
         name: 'Dragonstalker\'s Helm',
         priority: ['hunter'],
         category: 'tier',
         slot: 'head',
         quality: 'bis'
     },
-	{
+    {
         name: 'Stormrage Cover',
         priority: ['druid'],
         category: 'tier',
         slot: 'head',
         quality: 'bis'
     },
-	{
+    {
         name: 'Judgement Crown',
         priority: ['paladin'],
         category: 'tier',
         slot: 'head',
-        quality: 'bis'
+        quality: 'free'
     },
-	{
+    {
         name: 'Ancient Cornerstone Grimoire',
         priority: ['caster'],
         category: 'general',
         slot: 'offhand',
         quality: 'free'
     },
-	{
+    {
         name: 'Deathbringer',
         priority: ['warrior'],
         category: 'weapon',
         slot: 'weapon',
         quality: 'bis'
     },
-	{
+    {
         name: 'Vis\'kag the Bloodletter',
         priority: ['melee'],
         category: 'weapon',
         slot: 'weapon',
         quality: 'bis'
     },
-	{
+    {
         name: 'Eskhandar\'s Collar',
         priority: ['tank'],
         category: 'general',
         slot: 'neck',
         quality: 'free'
     },
-	{
+    {
         name: 'Ring of Binding',
         priority: ['warrior'],
         category: 'general',
         slot: 'neck',
         quality: 'free'
     },
-	{
+    {
         name: 'Sapphiron Drape',
         priority: ['caster'],
         category: 'general',
         slot: 'back',
         quality: 'free'
     },
-	{
+    {
         name: 'Shard of the Scale',
         priority: ['healer'],
         category: 'general',
         slot: 'trinket',
         quality: 'bis'
     },
-	{
+    {
         name: 'Head of Onyxia',
         priority: ['melee'],
         category: 'general',

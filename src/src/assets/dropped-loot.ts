@@ -7,10 +7,6 @@ export const DROPPED_LOOT = [
                 recipient: 'Gried',
                 source: 'Majordomo'
             }, {
-                recipient: 'Delos',
-                name: 'Eskhandar\'s Right Claw',
-                source: 'Magmadar'
-            }, {
                 recipient: 'Meowntain',
                 name: 'Nightslayer Gloves',
                 source: 'Gehennas'
@@ -23,6 +19,10 @@ export const DROPPED_LOOT = [
                 name: 'Nightslayer Chestpiece',
                 source: 'Harbinger'
             }, {
+                recipient: 'Taggart',
+                name: 'Lawbringer Belt',
+                source: 'Ragnaros'
+            }, , {
                 recipient: 'Roic',
                 name: 'Dragonstalker\'s Legguards',
                 source: 'Ragnaros'
@@ -38,11 +38,23 @@ export const DROPPED_LOOT = [
                 recipient: 'Taldia',
                 name: 'Stormrage Cover',
                 source: 'Onyxia'
-            },
+            }, {
+                recipient: 'Greywind',
+                name: 'Giantstalker\'s Belt',
+                source: 'Trash'
+            }, {
+                recipient: 'Greywind',
+                name: 'Giantstalker\'s Bracers',
+                source: 'Trash'
+            }, {
+                recipient: 'Greywind',
+                name: 'Giantstalker\'s Gloves',
+                source: 'Shazzrah'
+            }
         ]
     },
     {
-        date: '10/2/2019',
+        date: '10/20/2019',
         raid: 'Molten Core',
         loot: [
             {
@@ -117,22 +129,22 @@ export const DROPPED_LOOT = [
         raid: 'Molten Core',
         loot: [
             {
-                name: 'Belt of Might',
+                name: 'Bracers of Might',
                 recipient: 'Delos',
                 source: 'Trash'
             },
             {
-                name: 'Cenarion Belt',
+                name: 'Cenarion Bracers',
                 recipient: 'Taldia',
                 source: 'Trash'
             },
             {
-                name: 'Girdle of Prophecy',
+                name: 'Vambraces of Prophecy',
                 recipient: 'Wander',
                 source: 'Trash'
             },
             {
-                name: 'Girdle of Prophecy',
+                name: 'Vambraces of Prophecy',
                 recipient: 'Laurah',
                 source: 'Trash'
             },
@@ -154,6 +166,26 @@ export const DROPPED_LOOT = [
             {
                 name: 'Cenarion Belt',
                 recipient: 'Minerva',
+                source: 'Trash'
+            },
+            {
+                name: 'Nightslayer Bracelets',
+                recipient: 'Falaris',
+                source: 'Trash'
+            },
+            {
+                name: 'Vambraces of Prophecy',
+                recipient: 'Sproggle',
+                source: 'Trash'
+            },
+            {
+                name: 'Girdle of Prophecy',
+                recipient: 'Laurah',
+                source: 'Trash'
+            },
+            {
+                name: 'Giantstalker\'s Belt',
+                recipient: 'Harbard',
                 source: 'Trash'
             },
             {
@@ -489,7 +521,7 @@ export const DROPPED_LOOT = [
                 source: 'Magmadar'
             },
             {
-                recipient: 'Falaris',
+                recipient: 'Delos',
                 name: 'Eskhandar\'s Right Claw',
                 source: 'Magmadar'
             },
@@ -872,7 +904,7 @@ export const DROPPED_LOOT = [
             },
             {
                 recipient: 'Icescreamer',
-                name: 'Judgment Legplates',
+                name: 'Judgement Legplates',
                 source: 'Ragnaros'
             },
             {
@@ -1038,8 +1070,13 @@ export const DROPPED_LOOT = [
         raid: 'Molten Core',
         loot: [
             {
+                recipient: 'Xinghua',
+                name: 'Belt of Might',
+                source: 'Trash'
+            },
+            {
                 recipient: 'Meowntain',
-                name: 'Nightstalker\'s Wristguards',
+                name: 'Nightslayer Bracelets',
                 source: 'Trash'
             },
             {
@@ -1350,7 +1387,7 @@ export const DROPPED_LOOT = [
         raid: 'Molten Core',
         loot: [
             {
-                recipient: 'Delos',
+                recipient: 'Vick',
                 name: 'Bracers of Might',
                 source: 'Trash'
             },
@@ -1406,7 +1443,7 @@ export const DROPPED_LOOT = [
             },
             {
                 recipient: 'Meowntain',
-                name: 'Agred Core Leather Gloves',
+                name: 'Aged Core Leather Gloves',
                 source: 'Garr'
             },
             {
@@ -1460,7 +1497,7 @@ export const DROPPED_LOOT = [
                 source: 'Majordomo'
             },
             {
-                recipient: 'Qupipie',
+                recipient: 'Quippie',
                 name: 'Nemesis Leggings',
                 source: 'Ragnaros'
             },
@@ -1482,6 +1519,142 @@ export const DROPPED_LOOT = [
         ]
     },
     {
+        date: '12/17/2019',
+        raid: 'Molten Core',
+        loot: [
+            {
+                recipient: 'Vicca',
+                name: 'Felheart Bracers',
+                source: 'Trash'
+            },
+            {
+                recipient: 'Fellord',
+                name: 'Felheart Belt',
+                source: 'Trash'
+            },
+            {
+                recipient: 'Talate',
+                name: 'Nightslayer Belt',
+                source: 'Trash'
+            },
+            {
+                recipient: 'Alonsur',
+                name: 'Lawbringer Boots',
+                source: 'Lucifron'
+            },
+            {
+                recipient: 'Disenchant',
+                name: 'Manastorm Leggings',
+                source: 'Lucifron'
+            },
+            {
+                recipient: 'Dress',
+                name: 'Arcanist Leggings',
+                source: 'Magmadar'
+            },
+            {
+                recipient: 'Taldia',
+                name: 'Medallion of Steadfast Might',
+                source: 'Magmadar'
+            },
+            {
+                recipient: 'Pwent',
+                name: 'Talisman of Ephemeral Power',
+                source: 'Magmadar'
+            },
+            {
+                recipient: 'Disenchant',
+                name: 'Gloves of Prophecy',
+                source: 'Gehennas'
+            },
+            {
+                recipient: 'Helinos',
+                name: 'Ring of Spell Power',
+                source: 'Gehennas'
+            },
+            {
+                recipient: 'Daryl',
+                name: 'Brutality Blade',
+                source: 'Garr'
+            },
+            {
+                recipient: 'Greywind',
+                name: 'Giantstalker\'s Helmet',
+                source: 'Garr'
+            },
+            {
+                recipient: 'Forcedawg',
+                name: 'Arcanist Mantle',
+                source: 'Baron Geddon'
+            },
+            {
+                recipient: 'Disenchant',
+                name: 'Mantle of Prophecy',
+                source: 'Baron Geddon'
+            },
+            {
+                recipient: 'Disenchant',
+                name: 'Gloves of Prophecy',
+                source: 'Shazzrah'
+            },
+            {
+                recipient: 'Disenchant',
+                name: 'Giantstalker\'s Gloves',
+                source: 'Shazzrah'
+            },
+            {
+                recipient: 'Kelharath',
+                name: 'Breastplate of Might',
+                source: 'Golemagg'
+            },
+            {
+                recipient: 'Daryl',
+                name: 'Quick Strike Ring',
+                source: 'Golemagg'
+            },
+            {
+                recipient: 'Sproles',
+                name: 'Nightslayer Shoulder Pads',
+                source: 'Harbinger'
+            },
+            {
+                recipient: 'Aelari',
+                name: 'Cauterizing Band',
+                source: 'Majordomo'
+            },
+            {
+                recipient: 'Delos',
+                name: 'Fireproof Cloak',
+                source: 'Majordomo'
+            },
+            {
+                recipient: 'Reprobate',
+                name: 'Eye of Divinity',
+                source: 'Majordomo'
+            },
+            {
+                recipient: 'Feonier',
+                name: 'Judgement Legplates',
+                source: 'Ragnaros'
+            },
+            {
+                recipient: 'Taggart',
+                name: 'Judgement Legplates',
+                source: 'Ragnaros'
+            },
+            {
+                recipient: 'Falaris',
+                name: 'Perdition\'s Blade',
+                source: 'Ragnaros'
+            },
+            {
+                recipient: 'Delos',
+                name: 'Band of Accuria',
+                source: 'Ragnaros'
+            }
+        ]
+    },
+    {
         date: '10/27/2019',
         raid: 'Onyxia',
         loot: [
@@ -1493,6 +1666,11 @@ export const DROPPED_LOOT = [
             {
                 recipient: 'Vick',
                 name: 'Helm of Wrath',
+                source: 'Onyxia'
+            },
+            {
+                recipient: 'Vick',
+                name: 'Head of Onyxia',
                 source: 'Onyxia'
             },
             {
@@ -1510,8 +1688,8 @@ export const DROPPED_LOOT = [
                 name: 'Eskhandar\'s Collar',
                 source: 'Onyxia'
             }
-		]
-	},
+        ]
+    },
     {
         date: '11/03/2019',
         raid: 'Onyxia',
@@ -1546,8 +1724,8 @@ export const DROPPED_LOOT = [
                 name: 'Sapphiron Drape',
                 source: 'Onyxia'
             }
-		]
-	},
+        ]
+    },
     {
         date: '11/06/2019',
         raid: 'Onyxia',
@@ -1582,8 +1760,8 @@ export const DROPPED_LOOT = [
                 name: 'Eskhandar\'s Collar',
                 source: 'Onyxia'
             }
-		]
-	},
+        ]
+    },
     {
         date: '11/13/2019',
         raid: 'Onyxia',
@@ -1618,8 +1796,8 @@ export const DROPPED_LOOT = [
                 name: 'Ancient Cornerstone Grimoire',
                 source: 'Onyxia'
             }
-		]
-	},
+        ]
+    },
     {
         date: '11/17/2019',
         raid: 'Onyxia',
@@ -1649,8 +1827,8 @@ export const DROPPED_LOOT = [
                 name: 'Eskhandar\'s Collar',
                 source: 'Onyxia'
             }
-		]
-	},
+        ]
+    },
     {
         date: '11/24/2019',
         raid: 'Onyxia',
@@ -1695,8 +1873,8 @@ export const DROPPED_LOOT = [
                 name: 'Vis\'kag the Bloodletter',
                 source: 'Onyxia'
             }
-		]
-	},
+        ]
+    },
     {
         date: '11/26/2019',
         raid: 'Onyxia',
@@ -1731,8 +1909,8 @@ export const DROPPED_LOOT = [
                 name: 'Eskhandar\'s Collar',
                 source: 'Onyxia'
             }
-		]
-	},
+        ]
+    },
     {
         date: '12/01/2019',
         raid: 'Onyxia',
@@ -1762,8 +1940,8 @@ export const DROPPED_LOOT = [
                 name: 'Ancient Cornerstone Grimoire',
                 source: 'Onyxia'
             }
-		]
-	},
+        ]
+    },
     {
         date: '12/08/2019',
         raid: 'Onyxia',
@@ -1798,8 +1976,8 @@ export const DROPPED_LOOT = [
                 name: 'Ancient Cornerstone Grimoire',
                 source: 'Onyxia'
             }
-		]
-	},
+        ]
+    },
     {
         date: '12/11/2019',
         raid: 'Onyxia',
@@ -1829,8 +2007,8 @@ export const DROPPED_LOOT = [
                 name: 'Ring of Binding',
                 source: 'Onyxia'
             }
-		]
-	},
+        ]
+    },
     {
         date: '12/17/2019',
         raid: 'Onyxia',
@@ -1870,8 +2048,8 @@ export const DROPPED_LOOT = [
                 name: 'Eskhandar\'s Collar',
                 source: 'Onyxia'
             }
-		]
-	},
+        ]
+    },
     {
         date: '12/22/2019',
         raid: 'Onyxia',
@@ -1901,7 +2079,59 @@ export const DROPPED_LOOT = [
                 name: 'Eskhandar\'s Collar',
                 source: 'Onyxia'
             }
-		]
-	}
+        ]
+    },
+    {
+        date: '12/29/2019',
+        raid: 'Onyxia',
+        loot: [
+            {
+                recipient: 'Helinos',
+                name: 'Netherwind Crown',
+                source: 'Onyxia'
+            },
+            {
+                recipient: 'Jarret',
+                name: 'Halo of Transcendence',
+                source: 'Onyxia'
+            },
+            {
+                recipient: 'Knaz',
+                name: 'Head of Onyxia',
+                source: 'Onyxia'
+            },
+            {
+                recipient: 'Falaris',
+                name: 'Eskhandar\'s Collar',
+                source: 'Onyxia'
+            }
+        ]
+    },
+    {
+        date: '12/30/2019',
+        raid: 'Onyxia',
+        loot: [
+            {
+                recipient: 'Zetsumei',
+                name: 'Dragonstalker\'s Helm',
+                source: 'Onyxia'
+            },
+            {
+                recipient: 'Kelharath',
+                name: 'Head of Onyxia',
+                source: 'Onyxia'
+            },
+            {
+                recipient: 'Kelharath',
+                name: 'Onyxia Hide Backpack',
+                source: 'Onyxia'
+            },
+            {
+                recipient: 'Sproggle',
+                name: 'Ancient Cornerstone Grimoire',
+                source: 'Onyxia'
+            }
+        ]
+    }
 ];
 

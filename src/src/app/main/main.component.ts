@@ -40,8 +40,45 @@ export class MainComponent implements OnInit {
     public playerLoot = [];
 
     public ngOnInit() {
-        this.update('perdition\'s blade');
-        this.showPlayer('Delos');
+        this.showAll();
+    }
+
+    public showAll() {
+        const players: string[] = this.Attendance
+            .reduce((p, c) => p.concat(c.players), [])
+            .map((x) => x.name)
+            .filter((v, i, a) => a.indexOf(v) === i)
+            .filter((x) => x !== 'Xinghua' && x !== 'Doruga' && x !== 'Dondante' && x !== 'Nitro' && x !== 'Boxcarhobo' && x !== 'Jarne' &&
+                x !== 'Kramson' && x !== 'Gried' && x !== 'Lumadin' && x !== 'Dezverly' && x !== 'Alprazolam');
+        this.data = [];
+        for (const playerName of players) {
+            const received = this.AvailableLoot.filter((x) => {
+                const playerReceived = this.DroppedLoot.filter((z) => z.recipient === playerName);
+                return playerReceived.some((z) => z.name === x.name);
+            });
+
+            const bisTier = received.filter((x) => x.quality === 'bis' && x.category === 'tier');
+            const freeTier = received.filter((x) => x.quality === 'free' && x.category === 'tier');
+            const bisGeneral = received.filter((x) => x.quality === 'bis' && (x.category === 'general' || x.category === 'weapon'));
+            const freeGeneral = received.filter((x) => x.quality === 'free' && x.category === 'general');
+
+            const attendance = this.Attendance.filter((x) => x.players.some((z) => z.name === playerName));
+
+            const result = {
+                player: playerName,
+                bis: `${bisTier.length} | ${bisGeneral.length}`,
+                free: `${freeTier.length} | ${freeGeneral.length}`,
+                weapon: bisGeneral.length,
+                total: received.length,
+                attendance: attendance.length
+            };
+
+            this.data.push(result);
+        }
+
+        this.data.sort((a, b) => {
+            return b.attendance - a.attendance;
+        });
     }
 
     public showPlayer(event: string) {

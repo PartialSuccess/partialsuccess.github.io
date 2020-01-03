@@ -1,3 +1,6 @@
 .hasItem {
     background-color: pink;
 }
+td {
+    min-width: 100px;
+}
