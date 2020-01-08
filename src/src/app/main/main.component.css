@@ -1,6 +1,20 @@
-.hasItem {
-    background-color: pink;
+table {
+    margin: 0 auto;
 }
 td {
     min-width: 100px;
+}
+nav {
+    margin: 0 auto;
+    min-width: 300px;
+    max-width: 50%;
+}
+.players-container {
+    margin: 20px auto;
+    display: flex;
+}
+.players {
+    display: flex;
+    flex-direction: column;
+    width: 330px;
 }

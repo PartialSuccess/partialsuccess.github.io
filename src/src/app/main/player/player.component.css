@@ -1,0 +1,28 @@
+.player {
+    text-align: left;
+    width: 300px;
+    margin: 10px 12px;
+    padding: 2px 8px;
+    border: 2px solid #227ac3;
+}
+.player .name {
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+    color: #227ac3;
+}
+.weapon {
+    color: lightcoral;
+}
+.bis-tier {
+    color: lightgreen;
+}
+.bis-general {
+    color: #b19cd9;
+}
+.other-tier {
+    color: lightgreen;
+}
+.other-general {
+    color: #b19cd9;
+}

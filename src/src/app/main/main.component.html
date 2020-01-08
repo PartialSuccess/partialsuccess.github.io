@@ -1,35 +1,20 @@
-<p>main works!</p>
+<nav>
+    <label for="typeahead-basic">Item Lookup </label>
+    <input id="typeahead-basic" type="text" class="form-control" [(ngModel)]="target" (ngModelChange)="update($event)"
+        [ngbTypeahead]="search" />
+</nav>
 
-<input type="text" [(ngModel)]="target" (ngModelChange)="update($event)" />
-<button (click)="showAll()">Show All</button>
-<table>
-    <tr>
-        <th></th>
-        <th>Player</th>
-        <th>BIS</th>
-        <th>Free</th>
-        <th>Total</th>
-        <th>Attendance</th>
-    </tr>
-    <tr *ngFor="let item of data" (click)="showPlayer(item.player)">
-        <!-- [ngClass]="{ 'hasItem': item.hasItem }" -->
-        <td><img *ngIf="item.hasItem" src="assets/img/favicon.ico" width="20" /></td>
-        <td>{{ item.player }}</td>
-        <td>{{ item.bis }}</td>
-        <td>{{ item.free }}</td>
-        <td>{{ item.total }}</td>
-        <td>{{ item.attendance }}</td>
-    </tr>
-</table>
-
-<div>
-    <div>{{player}}</div>
-    <table>
-        <tr>
-            <td>Item</td>
-        </tr>
-        <tr *ngFor="let item of playerLoot">
-            <td>{{item.name}}</td>
-        </tr>
-    </table>
+<div class="players-container">
+    <div class="players">
+        <h2>Need</h2>
+        <player *ngFor="let player of players.needItem" [details]="player"></player>
+    </div>
+    <div class="players">
+        <h2>Need (Alt)</h2>
+        <player *ngFor="let player of players.needItemAlt" [details]="player"></player>
+    </div>
+    <div class="players">
+        <h2>Have</h2>
+        <player *ngFor="let player of players.haveItem" [details]="player"></player>
+    </div>
 </div>
