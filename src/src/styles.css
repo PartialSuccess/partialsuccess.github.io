@@ -9,12 +9,13 @@ body {
     font-family: SofiaPro, 'Helvetica', sans-serif;
     text-align: center;
     margin: 30px auto 0;
-    width: 900px;
+    min-width: 900px;
     padding: 0px 20px;
     
-    background: url('assets/img/stormwind.png') no-repeat center center fixed; 
+    /* background: url('assets/img/stormwind.png') no-repeat center center fixed;  */
     background-size: cover;
 }
+/* 
 .dragon1 {
     position: absolute;
     top: 0;
@@ -177,4 +178,4 @@ h4 span {
 }
 .paladin {
 	color: #f58cba;
-}
+} */

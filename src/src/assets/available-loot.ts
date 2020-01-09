@@ -74,21 +74,21 @@ export const AVAILABLE_LOOT = [
         priority: ['warrior'],
         category: 'weapon',
         slot: 'weapon',
-        quality: 'free'
+        quality: 'other'
     },
     {
         name: 'Eskhandar\'s Right Claw',
         priority: ['melee'],
         category: 'weapon',
         slot: 'weapon',
-        quality: 'free'
+        quality: 'other'
     },
     {
         name: 'Finkle\'s Lava Dredger',
         priority: ['paladin', 'druid'],
         category: 'weapon',
         slot: 'weapon',
-        quality: 'free'
+        quality: 'other'
     },
     {
         name: 'Fire Runed Grimoire',
@@ -109,14 +109,14 @@ export const AVAILABLE_LOOT = [
         priority: ['paladin'],
         category: 'general',
         slot: 'offhand',
-        quality: 'free'
+        quality: 'other'
     },
     {
         name: 'Obsidian Edged Blade',
         priority: ['warrior', 'paladin'],
         category: 'weapon',
         slot: 'weapon',
-        quality: 'free'
+        quality: 'other'
     },
     {
         name: 'Perdition\'s Blade',
@@ -137,7 +137,7 @@ export const AVAILABLE_LOOT = [
         priority: ['warrior'],
         category: 'weapon',
         slot: 'weapon',
-        quality: 'free'
+        quality: 'other'
     },
     {
         name: 'Staff of Dominance',
@@ -242,14 +242,14 @@ export const AVAILABLE_LOOT = [
         priority: ['caster', 'healer'],
         category: 'general',
         slot: 'ring',
-        quality: 'free'
+        quality: 'other'
     },
     {
         name: 'Band of Sulfuras',
         priority: ['caster', 'healer'],
         category: 'general',
         slot: 'ring',
-        quality: 'free'
+        quality: 'other'
     },
     {
         name: 'Aged Core Leather Gloves',
@@ -270,7 +270,7 @@ export const AVAILABLE_LOOT = [
         priority: ['tank'],
         category: 'general',
         slot: 'feet',
-        quality: 'free'
+        quality: 'other'
     },
     {
         name: 'Cloak of the Shrouded Mists',
@@ -291,7 +291,7 @@ export const AVAILABLE_LOOT = [
         priority: ['feral', 'tank'],
         category: 'general',
         slot: 'back',
-        quality: 'free'
+        quality: 'other'
     },
     {
         name: 'Flameguard Gauntlets',
@@ -306,7 +306,7 @@ export const AVAILABLE_LOOT = [
         priority: [],
         category: 'general',
         slot: 'head',
-        quality: 'free'
+        quality: 'other'
     },
     {
         name: 'Mana Igniting Cord',
@@ -320,7 +320,7 @@ export const AVAILABLE_LOOT = [
         priority: [],
         category: 'general',
         slot: 'feet',
-        quality: 'free'
+        quality: 'other'
     },
     {
         name: 'Onslaught Girdle',
@@ -376,7 +376,7 @@ export const AVAILABLE_LOOT = [
         priority: ['druid'],
         category: 'tier',
         slot: 'waist',
-        quality: 'free'
+        quality: 'other'
     },
     {
         name: 'Cenarion Boots',
@@ -390,42 +390,42 @@ export const AVAILABLE_LOOT = [
         priority: ['druid'],
         category: 'tier',
         slot: 'wrists',
-        quality: 'free'
+        quality: 'other'
     },
     {
         name: 'Cenarion Vestments',
         priority: ['druid'],
         category: 'tier',
         slot: 'chest',
-        quality: 'free'
+        quality: 'other'
     },
     {
         name: 'Cenarion Gloves',
         priority: ['druid'],
         category: 'tier',
         slot: 'hands',
-        quality: 'free'
+        quality: 'other'
     },
     {
         name: 'Cenarion Helm',
         priority: ['druid'],
         category: 'tier',
         slot: 'head',
-        quality: 'free'
+        quality: 'other'
     },
     {
         name: 'Cenarion Leggings',
         priority: ['druid'],
         category: 'tier',
         slot: 'legs',
-        quality: 'free'
+        quality: 'other'
     },
     {
         name: 'Cenarion Spaulders',
         priority: ['druid'],
         category: 'tier',
         slot: 'shoulders',
-        quality: 'free'
+        quality: 'other'
     },
     {
         name: 'Stormrage Legguards',
@@ -502,7 +502,7 @@ export const AVAILABLE_LOOT = [
         priority: ['mage'],
         category: 'tier',
         slot: 'waist',
-        quality: 'free'
+        quality: 'other'
     },
     {
         name: 'Arcanist Bindings',
@@ -523,35 +523,35 @@ export const AVAILABLE_LOOT = [
         priority: ['mage'],
         category: 'tier',
         slot: 'feet',
-        quality: 'free'
+        quality: 'other'
     },
     {
         name: 'Arcanist Gloves',
         priority: ['mage'],
         category: 'tier',
         slot: 'hands',
-        quality: 'free'
+        quality: 'other'
     },
     {
         name: 'Arcanist Leggings',
         priority: ['mage'],
         category: 'tier',
         slot: 'legs',
-        quality: 'free'
+        quality: 'other'
     },
     {
         name: 'Arcanist Mantle',
         priority: ['mage'],
         category: 'tier',
         slot: 'shoulders',
-        quality: 'free'
+        quality: 'other'
     },
     {
         name: 'Arcanist Robes',
         priority: ['mage'],
         category: 'tier',
         slot: 'chest',
-        quality: 'free'
+        quality: 'other'
     },
     {
         name: 'Netherwind Pants',
@@ -565,98 +565,98 @@ export const AVAILABLE_LOOT = [
         priority: ['paladin'],
         category: 'tier',
         slot: 'waist',
-        quality: 'free'
+        quality: 'other'
     },
     {
         name: 'Lawbringer Boots',
         priority: ['paladin'],
         category: 'tier',
         slot: 'feet',
-        quality: 'free'
+        quality: 'other'
     },
     {
         name: 'Lawbringer Bracers',
         priority: ['paladin'],
         category: 'tier',
         slot: 'wrists',
-        quality: 'free'
+        quality: 'other'
     },
     {
         name: 'Lawbringer Chestguard',
         priority: ['paladin'],
         category: 'tier',
         slot: 'chest',
-        quality: 'free'
+        quality: 'other'
     },
     {
         name: 'Lawbringer Gauntlets',
         priority: ['paladin'],
         category: 'tier',
         slot: 'hands',
-        quality: 'free'
+        quality: 'other'
     },
     {
         name: 'Lawbringer Helm',
         priority: ['paladin'],
         category: 'tier',
         slot: 'head',
-        quality: 'free'
+        quality: 'other'
     },
     {
         name: 'Lawbringer Legplates',
         priority: ['paladin'],
         category: 'tier',
         slot: 'legs',
-        quality: 'free'
+        quality: 'other'
     },
     {
         name: 'Lawbringer Spaulders',
         priority: ['paladin'],
         category: 'tier',
         slot: 'shoulders',
-        quality: 'free'
+        quality: 'other'
     },
     {
         name: 'Judgement Legplates',
         priority: ['paladin'],
         category: 'tier',
         slot: 'legs',
-        quality: 'free'
+        quality: 'other'
     },
     {
         name: 'Boots of Prophecy',
         priority: ['priest'],
         category: 'tier',
         slot: 'feet',
-        quality: 'free'
+        quality: 'other'
     },
     {
         name: 'Circlet of Prophecy',
         priority: ['priest'],
         category: 'tier',
         slot: 'head',
-        quality: 'free'
+        quality: 'other'
     },
     {
         name: 'Girdle of Prophecy',
         priority: ['priest'],
         category: 'tier',
         slot: 'waist',
-        quality: 'free'
+        quality: 'other'
     },
     {
         name: 'Gloves of Prophecy',
         priority: ['priest'],
         category: 'tier',
         slot: 'hands',
-        quality: 'free'
+        quality: 'other'
     },
     {
         name: 'Pants of Prophecy',
         priority: ['priest'],
         category: 'tier',
         slot: 'legs',
-        quality: 'free'
+        quality: 'other'
     },
     {
         name: 'Mantle of Prophecy',
@@ -670,14 +670,14 @@ export const AVAILABLE_LOOT = [
         priority: ['priest'],
         category: 'tier',
         slot: 'chest',
-        quality: 'free'
+        quality: 'other'
     },
     {
         name: 'Vambraces of Prophecy',
         priority: ['priest'],
         category: 'tier',
         slot: 'hands',
-        quality: 'free'
+        quality: 'other'
     },
     {
         name: 'Leggings of Transcendence',
@@ -754,7 +754,7 @@ export const AVAILABLE_LOOT = [
         priority: ['warlock'],
         category: 'tier',
         slot: 'waist',
-        quality: 'free'
+        quality: 'other'
     },
     {
         name: 'Felheart Bracers',
@@ -768,42 +768,42 @@ export const AVAILABLE_LOOT = [
         priority: ['warlock'],
         category: 'tier',
         slot: 'hands',
-        quality: 'free'
+        quality: 'other'
     },
     {
         name: 'Felheart Pants',
         priority: ['warlock'],
         category: 'tier',
         slot: 'legs',
-        quality: 'free'
+        quality: 'other'
     },
     {
         name: 'Felheart Robes',
         priority: ['warlock'],
         category: 'tier',
         slot: 'chest',
-        quality: 'free'
+        quality: 'other'
     },
     {
         name: 'Felheart Shoulder Pads',
         priority: ['warlock'],
         category: 'tier',
         slot: 'shoulders',
-        quality: 'free'
+        quality: 'other'
     },
     {
         name: 'Felheart Horns',
         priority: ['warlock'],
         category: 'tier',
         slot: 'head',
-        quality: 'free'
+        quality: 'other'
     },
     {
         name: 'Felheart Slippers',
         priority: ['warlock'],
         category: 'tier',
         slot: 'feet',
-        quality: 'free'
+        quality: 'other'
     },
     {
         name: 'Nemesis Leggings',
@@ -929,14 +929,14 @@ export const AVAILABLE_LOOT = [
         priority: ['paladin'],
         category: 'tier',
         slot: 'head',
-        quality: 'free'
+        quality: 'other'
     },
     {
         name: 'Ancient Cornerstone Grimoire',
         priority: ['caster'],
         category: 'general',
         slot: 'offhand',
-        quality: 'free'
+        quality: 'other'
     },
     {
         name: 'Deathbringer',
@@ -957,21 +957,21 @@ export const AVAILABLE_LOOT = [
         priority: ['tank'],
         category: 'general',
         slot: 'neck',
-        quality: 'free'
+        quality: 'other'
     },
     {
         name: 'Ring of Binding',
         priority: ['warrior'],
         category: 'general',
         slot: 'neck',
-        quality: 'free'
+        quality: 'other'
     },
     {
         name: 'Sapphiron Drape',
         priority: ['caster'],
         category: 'general',
         slot: 'back',
-        quality: 'free'
+        quality: 'other'
     },
     {
         name: 'Shard of the Scale',
