@@ -1,8 +1,8 @@
 <div *ngIf="details" class="player">
     <div class="name">{{details.name}}</div>
-    <div class="weapon">{{details.weapons}}</div>
-    <div class="bis-general">{{details.bis.general}}</div>
-    <div class="bis-tier">{{details.bis.tier}}</div>
-    <div class="other-general">{{details.other.general}}</div>
-    <div class="other-tier">{{details.other.tier}}</div>
+    <div class="weapon" [innerHTML]="details.weapons"></div>
+    <div class="bis-general" [innerHTML]="details.bis.general"></div>
+    <div class="bis-tier" [innerHTML]="details.bis.tier"></div>
+    <div class="other-general" [innerHTML]="details.other.general"></div>
+    <div class="other-tier" [innerHTML]="details.other.tier"></div>
 </div>

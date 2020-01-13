@@ -44,7 +44,7 @@ export class MainComponent implements OnInit {
         };
 
         for (const target of targetPlayers) {
-            const details = this.getPlayerDetails(target.name);
+            const details = this.getPlayerDetails(target.name, item.name);
             const hasItem = details.all.find((x) => x.name === item.name);
 
             if (target.status === 'inactive') {
@@ -67,7 +67,7 @@ export class MainComponent implements OnInit {
         // });
     }
 
-    private getPlayerDetails(name: string): PlayerDetails {
+    private getPlayerDetails(name: string, item: string): PlayerDetails {
         const received = this.getReceivedBy(name);
 
         const weapons = received.filter((x) => x.category === 'weapon');
@@ -81,17 +81,19 @@ export class MainComponent implements OnInit {
         // const attendance = this.Attendance.filter((x) => x.players.some((z) => z.name === target.name));
         // const ratio = received.length / attendance.length;
 
+        const nameMapper = (x) => x.name === item ? `<b>${x.name}</b>` : x.name;
+
         return {
             name,
             all: received,
-            weapons: weapons.map((x) => x.name).join(', '),
+            weapons: weapons.map(nameMapper).join(', '),
             bis: {
-                tier: bisTier.map((x) => x.name).join(', '),
-                general: bisGeneral.map((x) => x.name).join(', ')
+                tier: bisTier.map(nameMapper).join(', '),
+                general: bisGeneral.map(nameMapper).join(', ')
             },
             other: {
-                tier: otherTier.map((x) => x.name).join(', '),
-                general: otherGeneral.map((x) => x.name).join(', ')
+                tier: otherTier.map(nameMapper).join(', '),
+                general: otherGeneral.map(nameMapper).join(', ')
             }
             // totalBis: receivedBis.length,
             // totalFree: receivedFree.length,
@@ -112,23 +114,23 @@ export class MainComponent implements OnInit {
     private getPossibleRecipients(priority: string[]): Player[] {
         return this.Roster.filter((player) => {
             return priority.some((drop) => {
-                if (player.type === 'tank') {
-                    return drop === player.type || drop === 'warrior';
+                if (player.job === 'tank') {
+                    return drop === player.job || drop === 'warrior';
                 }
 
                 if (drop === 'healer') {
-                    return player.type === 'druid' || player.type === 'priest' || player.type === 'paladin';;
+                    return player.job === 'druid' || player.job === 'priest' || player.job === 'paladin';;
                 }
 
                 if (drop === 'caster') {
-                    return player.type === 'mage' || player.type === 'warlock';
+                    return player.job === 'mage' || player.job === 'warlock';
                 }
 
                 if (drop === 'melee') {
-                    return player.type === 'rogue' || player.type === 'warrior';
+                    return player.job === 'rogue' || player.job === 'warrior';
                 }
 
-                return drop === player.type;
+                return drop === player.job;
             });
         });
     }
