@@ -6,6 +6,7 @@ import { ATTENDANCE } from 'src/assets/attendance';
 import { Observable } from 'rxjs';
 import { debounceTime, distinctUntilChanged, map } from 'rxjs/operators';
 import { DroppedItem, Item, Player, Players, PlayerDetails } from './models';
+import { RaidManager } from './raid.manager';
 
 @Component({
     selector: 'app-main',
@@ -13,12 +14,13 @@ import { DroppedItem, Item, Player, Players, PlayerDetails } from './models';
     styleUrls: ['./main.component.css']
 })
 export class MainComponent implements OnInit {
-    public DroppedLoot: DroppedItem[] = DROPPED_LOOT.reduce((current, next) => current.concat(next.loot), []);
+    public DroppedLoot: DroppedItem[];
     public AvailableLoot: Item[] = AVAILABLE_LOOT;
     public ItemIndex: string[] = AVAILABLE_LOOT.map((x) => x.name);
     public Roster: Player[] = ROSTER;
     public Attendance = ATTENDANCE;
     public players: Players = {} as any;
+    public currentItems = 'test';
 
     public search = (text$: Observable<string>) =>
         text$.pipe(
@@ -28,7 +30,23 @@ export class MainComponent implements OnInit {
         )
 
     public ngOnInit() {
+        this.setDroppedLoot([]);
         this.update('Cenarion Belt');
+
+        RaidManager.droppedItems.subscribe((droppedItems) => {
+            this.setDroppedLoot(droppedItems);
+            this.update('Cenarion Belt');
+            this.currentItems = droppedItems.map((x) =>
+                `{
+    recipient: '${x.recipient}',
+    name: '${x.name}',
+    source: '${x.source}'
+}`).join(',');
+        });
+    }
+
+    private setDroppedLoot(currentLoot: DroppedItem[]) {
+        this.DroppedLoot = DROPPED_LOOT.reduce((current, next) => current.concat(next.loot), []).concat(currentLoot);
     }
 
     public update(event: string) {
@@ -44,7 +62,7 @@ export class MainComponent implements OnInit {
         };
 
         for (const target of targetPlayers) {
-            const details = this.getPlayerDetails(target.name);
+            const details = this.getPlayerDetails(target.name, item);
             const hasItem = details.all.find((x) => x.name === item.name);
 
             if (target.status === 'inactive') {
@@ -57,19 +75,12 @@ export class MainComponent implements OnInit {
                 this.players.needItemAlt.push(details);
             }
         }
-
-        // this.players.sort((a, b) => {
-        //     if (a.hasItem) {
-        //         return a.hasItem === b.hasItem ? 0 : a.hasItem ? 1 : -1;
-        //     } else {
-        //         return a.ratio > b.ratio ? 1 : -1;
-        //     }
-        // });
     }
 
-    private getPlayerDetails(name: string): PlayerDetails {
-        const received = this.getReceivedBy(name);
+    private getPlayerDetails(player: string, item: Item): PlayerDetails {
+        const received = this.getReceivedBy(player);
 
+        const hasItem = received.find((x) => x.name === item.name);
         const weapons = received.filter((x) => x.category === 'weapon');
         const bis = received.filter((x) => x.quality === 'bis');
         const other = received.filter((x) => x.quality === 'other');
@@ -82,7 +93,8 @@ export class MainComponent implements OnInit {
         // const ratio = received.length / attendance.length;
 
         return {
-            name,
+            name: player,
+            neededItem: hasItem ? null : item,
             all: received,
             weapons: weapons.map((x) => x.name).join(', '),
             bis: {
@@ -132,49 +144,4 @@ export class MainComponent implements OnInit {
             });
         });
     }
-
-    // public showPlayer(event: string) {
-    //     this.player = event;
-    //     const droppedLoot = this.DroppedLoot.filter((x) => x.recipient === event);
-    //     this.playerLoot = this.AvailableLoot.filter((x) => droppedLoot.some((z) => z.name === x.name));
-    // }
-
-    // public showAll() {
-    //     const players: string[] = this.Attendance
-    //         .reduce((p, c) => p.concat(c.players), [])
-    //         .map((x) => x.name)
-    //         .filter((v, i, a) => a.indexOf(v) === i)
-    //         .filter((x) => x !== 'Xinghua' && x !== 'Doruga' && x !== 'Dondante' && x !== 'Nitro' && x !== 'Boxcarhobo' && x !== 'Jarne' &&
-    //             x !== 'Kramson' && x !== 'Gried' && x !== 'Lumadin' && x !== 'Dezverly' && x !== 'Alprazolam');
-    //     this.data = [];
-    //     for (const playerName of players) {
-    //         const received = this.AvailableLoot.filter((x) => {
-    //             const playerReceived = this.DroppedLoot.filter((z) => z.recipient === playerName);
-    //             return playerReceived.some((z) => z.name === x.name);
-    //         });
-
-    //         const bisTier = received.filter((x) => x.quality === 'bis' && x.category === 'tier');
-    //         const freeTier = received.filter((x) => x.quality === 'free' && x.category === 'tier');
-    //         const bisGeneral = received.filter((x) => x.quality === 'bis' && (x.category === 'general' || x.category === 'weapon'));
-    //         const freeGeneral = received.filter((x) => x.quality === 'free' && x.category === 'general');
-
-    //         const attendance = this.Attendance.filter((x) => x.players.some((z) => z.name === playerName));
-
-    //         const result = {
-    //             player: playerName,
-    //             bis: `${bisTier.length} | ${bisGeneral.length}`,
-    //             free: `${freeTier.length} | ${freeGeneral.length}`,
-    //             weapon: bisGeneral.length,
-    //             total: received.length,
-    //             attendance: attendance.length
-    //         };
-
-    //         this.data.push(result);
-    //     }
-
-    //     this.data.sort((a, b) => {
-    //         return b.attendance - a.attendance;
-    //     });
-    // }
-
 }

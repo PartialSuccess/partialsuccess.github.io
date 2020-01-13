@@ -18,3 +18,8 @@ nav {
     flex-direction: column;
     width: 330px;
 }
+textarea {
+    resize: none;
+    height: 1000px;
+    width: 300px;
+}

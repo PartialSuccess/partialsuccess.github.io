@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
-import { PlayerDetails } from '../models';
+import { PlayerDetails, Item } from '../models';
+import { RaidManager } from '../raid.manager';
 
 @Component({
     selector: 'player',
@@ -8,4 +9,12 @@ import { PlayerDetails } from '../models';
 })
 export class PlayerComponent {
     @Input() details: PlayerDetails;
+
+    public addItem(item: Item) {
+        RaidManager.addItem({
+            name: item.name,
+            recipient: this.details.name,
+            source: 'test'
+        });
+    }
 }

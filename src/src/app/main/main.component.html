@@ -17,4 +17,10 @@
         <h2>Have</h2>
         <player *ngFor="let player of players.haveItem" [details]="player"></player>
     </div>
+    <div class="players">
+        <h2>Current Raid</h2>
+        <textarea [(ngModel)]="currentItems">
+
+        </textarea>
+    </div>
 </div>

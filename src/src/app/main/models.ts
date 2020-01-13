@@ -26,6 +26,7 @@ export interface Players {
 
 export interface PlayerDetails {
     name: string;
+    neededItem: Item;
     all: Item[];
     weapons: string;
     bis: { tier: string, general: string };
