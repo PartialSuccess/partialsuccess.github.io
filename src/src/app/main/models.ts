@@ -14,7 +14,7 @@ export interface Item {
 
 export interface Player {
     name: string;
-    type: string;
+    job: string;
     status: string;
 }
 

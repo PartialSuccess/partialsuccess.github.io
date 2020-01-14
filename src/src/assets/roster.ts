@@ -1,287 +1,311 @@
 export const ROSTER = [
     {
         name: 'Abraham',
-        type: 'warrior',
-        status: 'active'
+        job: 'warrior',
+        status: 'active',
+        priorities: ['tank', 'fury']
     },
     {
         name: 'Aelari',
-        type: 'druid',
-        status: 'active'
+        job: 'druid',
+        status: 'active',
+        priorities: ['resto']
     },
     {
         name: 'Alonsur',
-        type: 'paladin',
-        status: 'active'
+        job: 'paladin',
+        status: 'active',
+        priorities: ['holy', 'protection']
     },
     {
         name: 'Alprazolam',
-        type: 'druid',
+        job: 'druid',
         status: 'inactive'
     },
     {
         name: 'Begrungi',
-        type: 'warrior',
+        job: 'warrior',
         status: 'active'
     },
     {
         name: 'Bubblygrailz',
-        type: 'mage',
+        job: 'mage',
         status: 'active'
     },
     {
         name: 'Burningman',
-        type: 'mage',
+        job: 'mage',
         status: 'active'
     },
     {
         name: 'Casanova',
-        type: 'mage',
+        job: 'mage',
         status: 'alternate'
     },
     {
         name: 'Charmander',
-        type: 'priest',
-        status: 'active'
+        job: 'priest',
+        status: 'active',
+        priorities: ['resto'],
+        veto: [
+            'Boots of Prophecy',
+            'Circlet of Prophecy',
+            'Girdle of Prophecy',
+            'Gloves of Prophecy',
+            'Pants of Prophecy',
+            'Mantle of Prophecy',
+            'Robes of Prophecy',
+            'Vambraces of Prophecy'
+        ]
     },
     {
         name: 'Daryl',
-        type: 'warrior',
+        job: 'warrior',
         status: 'active'
     },
     {
         name: 'Delos',
-        type: 'warrior',
-        status: 'active'
+        job: 'warrior',
+        status: 'active',
+        priorities: ['prot', 'fury']
     },
     {
         name: 'Dezverly',
-        type: 'warlock',
+        job: 'warlock',
         status: 'inactive'
     },
     {
         name: 'Dondante',
-        type: 'hunter',
+        job: 'hunter',
         status: 'inactive'
     },
     {
         name: 'Doruga',
-        type: 'hunter',
+        job: 'hunter',
         status: 'inactive'
     },
     {
         name: 'Dress',
-        type: 'mage',
+        job: 'mage',
         status: 'active'
     },
     {
         name: 'Dunnrik',
-        type: 'paladin',
-        status: 'alternate'
+        job: 'paladin',
+        status: 'alternate',
+        priorities: ['retribution', 'holy']
     },
     {
         name: 'Falaris',
-        type: 'rogue',
+        job: 'rogue',
         status: 'active'
     },
     {
         name: 'Fellord',
-        type: 'warlock',
+        job: 'warlock',
         status: 'active'
     },
     {
         name: 'Feonier',
-        type: 'warrior',
-        status: 'active'
+        job: 'warrior',
+        status: 'active',
+        priorities: ['retribution', 'holy']
     },
     {
         name: 'Fionic',
-        type: 'paladin',
-        status: 'inactive'
+        job: 'paladin',
+        status: 'inactive',
+        priorities: ['holy']
     },
     {
         name: 'Forcedawg',
-        type: 'mage',
+        job: 'mage',
         status: 'active'
     },
     {
         name: 'Gigabit',
-        type: 'mage',
+        job: 'mage',
         status: 'alternate'
     },
     {
         name: 'Greywind',
-        type: 'hunter',
+        job: 'hunter',
         status: 'active'
     },
     {
         name: 'Gried',
-        type: 'priest',
+        job: 'priest',
         status: 'inactive'
     },
     {
         name: 'Grovee',
-        type: 'rogue',
+        job: 'rogue',
         status: 'active'
     },
     {
         name: 'Gurkel',
-        type: 'mage',
+        job: 'mage',
         status: 'alternate'
     },
     {
         name: 'Harbard',
-        type: 'hunter',
+        job: 'hunter',
         status: 'inactive'
     },
     {
         name: 'Helinos',
-        type: 'mage',
+        job: 'mage',
         status: 'active'
     },
     {
         name: 'Horon',
-        type: 'warrior',
+        job: 'warrior',
         status: 'alternate'
     },
     {
         name: 'Icescreamer',
-        type: 'paladin',
+        job: 'paladin',
         status: 'active'
     },
     {
         name: 'Immortal',
-        type: 'warrior',
+        job: 'warrior',
         status: 'active'
     },
     {
         name: 'Jarett',
-        type: 'warrior',
-        status: 'active'
+        job: 'warrior',
+        status: 'active',
+        priorities: ['fury', 'protection']
     },
     {
         name: 'Jarne',
-        type: 'paladin',
+        job: 'paladin',
         status: 'inactive'
     },
     {
         name: 'Jbaum',
-        type: 'warlock',
+        job: 'warlock',
         status: 'active'
     },
     {
         name: 'Kelharath',
-        type: 'warrior',
+        job: 'warrior',
         status: 'active'
     },
     {
         name: 'Knaz',
-        type: 'rogue',
+        job: 'rogue',
         status: 'active'
     },
     {
         name: 'Laurah',
-        type: 'priest',
+        job: 'priest',
         status: 'active'
     },
     {
         name: 'Lumadin',
-        type: 'paladin',
+        job: 'paladin',
         status: 'inactive'
     },
     {
         name: 'Meowntain',
-        type: 'rogue',
+        job: 'rogue',
         status: 'active'
     },
     {
         name: 'Minerva',
-        type: 'druid',
-        status: 'active'
+        job: 'druid',
+        status: 'active',
+        priorities: ['restoration', 'feral']
     },
     {
         name: 'Pwent',
-        type: 'warlock',
+        job: 'warlock',
         status: 'active'
     },
     {
         name: 'Quippie',
-        type: 'warlock',
+        job: 'warlock',
         status: 'active'
     },
     {
         name: 'Rhonto',
-        type: 'druid',
-        status: 'active'
+        job: 'druid',
+        status: 'active',
+        priorities: ['feral', 'restoration']
     },
     {
         name: 'Roic',
-        type: 'hunter',
+        job: 'hunter',
         status: 'active'
     },
     {
         name: 'Selnath',
-        type: 'druid',
-        status: 'active'
+        job: 'druid',
+        status: 'active',
+        priorities: ['restoration', 'feral']
     },
     {
         name: 'Serethiel',
-        type: 'druid',
-        status: 'active'
+        job: 'druid',
+        status: 'active',
+        priorities: ['feral']
     },
     {
         name: 'Sproggle',
-        type: 'priest',
+        job: 'priest',
         status: 'active'
     },
     {
         name: 'Sproles',
-        type: 'rogue',
+        job: 'rogue',
         status: 'active'
     },
     {
         name: 'Taggart',
-        type: 'paladin',
-        status: 'active'
+        job: 'paladin',
+        status: 'active',
+        priorities: ['holy', 'protection']
     },
     {
         name: 'Talate',
-        type: 'rogue',
+        job: 'rogue',
         status: 'active'
     },
     {
         name: 'Taldia',
-        type: 'druid',
+        job: 'druid',
         status: 'alternate'
     },
     {
         name: 'Timeless',
-        type: 'warrior',
+        job: 'warrior',
         status: 'active'
     },
     {
         name: 'Vicca',
-        type: 'warlock',
+        job: 'warlock',
         status: 'active'
     },
     {
         name: 'Vick',
-        type: 'warrior',
+        job: 'warrior',
         status: 'active'
     },
     {
         name: 'Wander',
-        type: 'priest',
+        job: 'priest',
         status: 'active'
     },
     {
         name: 'Xinghua',
-        type: 'warrior',
+        job: 'warrior',
         status: 'inactive'
     },
     {
         name: 'Zetsumei',
-        type: 'hunter',
+        job: 'hunter',
         status: 'active'
     }
 ];

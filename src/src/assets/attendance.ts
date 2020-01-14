@@ -156,9 +156,7 @@ export const ATTENDANCE = [
             { name: 'Vick' },
             { name: 'Wander' },
             { name: 'Xinghua' },
-            {
-                name: 'Zetsumei'
-            }
+            { name: 'Zetsumei' }
         ]
     }, {
         date: '11/06/2019',

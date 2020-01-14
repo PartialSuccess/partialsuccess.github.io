@@ -799,7 +799,7 @@ export const DROPPED_LOOT = [
             },
             {
                 recipient: 'Aelari',
-                name: 'Cenarion Gloves',
+                name: 'Cenarion Boots',
                 source: 'Lucifron'
             },
             {
@@ -1519,7 +1519,7 @@ export const DROPPED_LOOT = [
         ]
     },
     {
-        date: '12/17/2019',
+        date: '12/29/2019',
         raid: 'Molten Core',
         loot: [
             {
@@ -1650,6 +1650,273 @@ export const DROPPED_LOOT = [
             {
                 recipient: 'Delos',
                 name: 'Band of Accuria',
+                source: 'Ragnaros'
+            }
+        ]
+    },
+    {
+        date: '01/05/2019',
+        raid: 'Molten Core',
+        loot: [
+            {
+                recipient: 'Abraham',
+                name: 'Bracers of Might',
+                source: 'Trash'
+            },
+            {
+                recipient: 'Jbaum',
+                name: 'Felheart Bracers',
+                source: 'Trash'
+            },
+            {
+                recipient: 'Abraham',
+                name: 'Gauntlets of Might',
+                source: 'Lucifron'
+            },
+            {
+                recipient: 'Minerva',
+                name: 'Cenarion Boots',
+                source: 'Lucifron'
+            },
+            {
+                recipient: 'Dress',
+                name: 'Crimson Shocker',
+                source: 'Lucifron'
+            },
+            {
+                recipient: 'Zetsumei',
+                name: 'Giantstalker\'s Leggings',
+                source: 'Magmadar'
+            },
+            {
+                recipient: 'Vicca',
+                name: 'Felheart Pants',
+                source: 'Magmadar'
+            },
+            {
+                recipient: 'Immortal',
+                name: 'Flameguard Gauntlets',
+                source: 'Magmadar'
+            },
+            {
+                recipient: 'Knaz',
+                name: 'Nightslayer Gloves',
+                source: 'Gehennas'
+            },
+            {
+                recipient: 'Abraham',
+                name: 'Sabatons of Might',
+                source: 'Gehennas'
+            },
+            {
+                recipient: 'Forcedawg',
+                name: 'Arcanist Crown',
+                source: 'Garr'
+            },
+            {
+                recipient: 'Jarret',
+                name: 'Brutality Blade',
+                source: 'Garr'
+            },
+            {
+                recipient: 'Helinos',
+                name: 'Arcanist Mantle',
+                source: 'Baron Geddon'
+            },
+            {
+                recipient: 'Begrungi',
+                name: 'Flamewalker Legplates',
+                source: 'Baron Geddon'
+            },
+            {
+                recipient: 'Quas',
+                name: 'Giantstalker\'s Gloves',
+                source: 'Shazzrah'
+            },
+            {
+                recipient: 'Fellord',
+                name: 'Felheart Gloves',
+                source: 'Shazzrah'
+            },
+            {
+                recipient: 'Immortal',
+                name: 'Breastplate of Might',
+                source: 'Golemagg'
+            },
+            {
+                recipient: 'Immortal',
+                name: 'Blastershot Launcher',
+                source: 'Golemagg'
+            },
+            {
+                recipient: 'Vick',
+                name: 'Shoulders of Might',
+                source: 'Harbinger'
+            },
+            {
+                recipient: 'Quas',
+                name: 'Ancient Petrified Leaf',
+                source: 'Majordomo'
+            },
+            {
+                recipient: 'Jarret',
+                name: 'Corehound Tooth',
+                source: 'Majordomo'
+            },
+            {
+                recipient: 'Greywind',
+                name: 'Judgement Legplates',
+                source: 'Ragnaros'
+            },
+            {
+                recipient: 'Grovee',
+                name: 'Band of Accuria',
+                source: 'Ragnaros'
+            },
+            {
+                recipient: 'Sproles',
+                name: 'Perdition\'s Blade',
+                source: 'Ragnaros'
+            }
+        ]
+    },
+    {
+        date: '01/08/2019',
+        raid: 'Molten Core',
+        loot: [
+            {
+                recipient: 'Vick',
+                name: 'Bracers of Might',
+                source: 'Trash'
+            },
+            {
+                recipient: 'Knaz',
+                name: 'Nightslayer Bracelets',
+                source: 'Trash'
+            },
+            {
+                recipient: 'Sproggle',
+                name: 'Vambraces of Prophecy',
+                source: 'Trash'
+            },
+            {
+                recipient: 'Doraleous',
+                name: 'Flamewalker Legplates',
+                source: 'Lucifron'
+            },
+            {
+                recipient: 'Polymilf',
+                name: 'Arcanist Boots',
+                source: 'Lucifron'
+            },
+            {
+                recipient: 'Polymilf',
+                name: 'Arcanist Leggings',
+                source: 'Magmadar'
+            },
+            {
+                recipient: 'Jarret',
+                name: 'Medallion of Steadfast Might',
+                source: 'Magmadar'
+            },
+            {
+                recipient: 'Immortal',
+                name: 'Quick Strike Ring',
+                source: 'Magmadar'
+            },
+            {
+                recipient: 'Grovee',
+                name: 'Nightslayer Gloves',
+                source: 'Gehennas'
+            },
+            {
+                recipient: 'Jarett',
+                name: 'Sabatons of Might',
+                source: 'Gehennas'
+            },
+            {
+                recipient: 'Immortal',
+                name: 'Flamewalker Legplates',
+                source: 'Garr'
+            },
+            {
+                recipient: 'Begrungi',
+                name: 'Gutgore Ripper',
+                source: 'Garr'
+            },
+            {
+                recipient: 'Selnath',
+                name: 'Cenarion Spaulders',
+                source: 'Baron Geddon'
+            },
+            {
+                recipient: 'Aelari',
+                name: 'Cenarion Gloves',
+                source: 'Shazzrah'
+            },
+            {
+                recipient: 'Alonsur',
+                name: 'Salamander Scale Pants',
+                source: 'Shazzrah'
+            },
+            {
+                recipient: 'Falaris',
+                name: 'Nightslayer Chestpiece',
+                source: 'Golemagg'
+            },
+            {
+                recipient: 'Roic',
+                name: 'Giantstalker\'s Breastplate',
+                source: 'Golemagg'
+            },
+            {
+                recipient: 'Burningman',
+                name: 'Azuresong Mageblade',
+                source: 'Golemagg'
+            },
+            {
+                recipient: 'Fellord',
+                name: 'Staff of Dominance',
+                source: 'Golemagg'
+            },
+            {
+                recipient: 'Abraham',
+                name: 'Shoulders of Might',
+                source: 'Harbinger'
+            },
+            {
+                recipient: 'Greywind',
+                name: 'Giantstalker\'s Epaulets',
+                source: 'Harbinger'
+            },
+            {
+                recipient: 'Begrungi',
+                name: 'Core Hound Tooth',
+                source: 'Majordomo'
+            },
+            {
+                recipient: 'Fellord',
+                name: 'Sash of Whispered Secrets',
+                source: 'Majordomo'
+            },
+            {
+                recipient: 'Laurah',
+                name: 'Judgement Legplates',
+                source: 'Ragnaros'
+            },
+            {
+                recipient: 'Vicca',
+                name: 'Judgement Legplates',
+                source: 'Ragnaros'
+            },
+            {
+                recipient: 'Talate',
+                name: 'Dragon\'s Blood Cape',
+                source: 'Ragnaros'
+            },
+            {
+                recipient: 'Abraham',
+                name: 'Essence of the Pure Flame',
                 source: 'Ragnaros'
             }
         ]
@@ -2129,6 +2396,73 @@ export const DROPPED_LOOT = [
             {
                 recipient: 'Sproggle',
                 name: 'Ancient Cornerstone Grimoire',
+                source: 'Onyxia'
+            }
+        ]
+    },
+    {
+        date: '01/01/2019',
+        raid: 'Onyxia',
+        loot: [
+            {
+                recipient: 'Aelari',
+                name: 'Stormrage Cover',
+                source: 'Onyxia'
+            },
+            {
+                recipient: 'Greywind',
+                name: 'Dragonstalker\'s Helm',
+                source: 'Onyxia'
+            },
+            {
+                recipient: 'Grovee',
+                name: 'Head of Onyxia',
+                source: 'Onyxia'
+            },
+            {
+                recipient: 'Serethiel',
+                name: 'Oynxia Hide Backpack',
+                source: 'Onyxia'
+            },
+            {
+                recipient: 'Sproles',
+                name: 'Oynxia Hide Backpack',
+                source: 'Onyxia'
+            },
+            {
+                recipient: 'Forcedawg',
+                name: 'Ancient Cornerstone Grimoire',
+                source: 'Onyxia'
+            }
+        ]
+    },
+    {
+        date: '01/05/2019',
+        raid: 'Onyxia',
+        loot: [
+            {
+                recipient: 'Vicca',
+                name: 'Nemesis Skullcap',
+                source: 'Onyxia'
+            },
+            {
+                recipient: 'Sproggle',
+                name: 'Halo of Transcendence',
+                source: 'Onyxia'
+            },
+            {
+                recipient: 'Dress',
+                name: 'Onyxia Hide Backpack',
+                source: 'Onyxia'
+            },
+            {
+                recipient: 'Serethiel',
+                name: 'Onyxia Hide Backpack',
+                source: 'Onyxia'
+            },
+            {
+                recipient: 'Burningman',
+                name: 'Sapphiron Drape',
                 source: 'Onyxia'
             }
         ]
