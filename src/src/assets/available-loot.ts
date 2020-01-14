@@ -310,7 +310,7 @@ export const AVAILABLE_LOOT = [
     },
     {
         name: 'Mana Igniting Cord',
-        priority: ['mage', 'warlock'],
+        priority: ['mage'],
         category: 'general',
         slot: 'waist',
         quality: 'bis'
