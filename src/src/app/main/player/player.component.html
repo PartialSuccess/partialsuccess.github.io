@@ -1,5 +1,4 @@
 <div *ngIf="details" class="player">
-<<<<<<< HEAD
     <div class="name">{{details.name}}<span class="add" *ngIf="details.neededItem!=null"
             (click)="addItem(details.neededItem)">+</span></div>
     <div class="weapon">{{details.weapons}}</div>
@@ -7,12 +6,4 @@
     <div class="bis-tier">{{details.bis.tier}}</div>
     <div class="other-general">{{details.other.general}}</div>
     <div class="other-tier">{{details.other.tier}}</div>
-=======
-    <div class="name">{{details.name}}</div>
-    <div class="weapon" [innerHTML]="details.weapons"></div>
-    <div class="bis-general" [innerHTML]="details.bis.general"></div>
-    <div class="bis-tier" [innerHTML]="details.bis.tier"></div>
-    <div class="other-general" [innerHTML]="details.other.general"></div>
-    <div class="other-tier" [innerHTML]="details.other.tier"></div>
->>>>>>> e25d937c03dcb48f7cd9c22921e1f850baa45e67
 </div>
