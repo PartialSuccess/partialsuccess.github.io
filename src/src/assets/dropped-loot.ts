@@ -799,7 +799,7 @@ export const DROPPED_LOOT = [
             },
             {
                 recipient: 'Aelari',
-                name: 'Cenarion Gloves',
+                name: 'Cenarion Boots',
                 source: 'Lucifron'
             },
             {

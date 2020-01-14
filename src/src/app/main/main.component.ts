@@ -63,10 +63,14 @@ export class MainComponent implements OnInit {
 
         for (const target of targetPlayers) {
 <<<<<<< HEAD
+<<<<<<< HEAD
             const details = this.getPlayerDetails(target.name, item);
 =======
             const details = this.getPlayerDetails(target.name, item.name);
 >>>>>>> e25d937c03dcb48f7cd9c22921e1f850baa45e67
+=======
+            const details = this.getPlayerDetails(target.name, item.name);
+>>>>>>> branch
             const hasItem = details.all.find((x) => x.name === item.name);
 
             if (target.status === 'inactive') {
@@ -82,12 +86,17 @@ export class MainComponent implements OnInit {
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     private getPlayerDetails(player: string, item: Item): PlayerDetails {
         const received = this.getReceivedBy(player);
 =======
     private getPlayerDetails(name: string, item: string): PlayerDetails {
         const received = this.getReceivedBy(name);
 >>>>>>> e25d937c03dcb48f7cd9c22921e1f850baa45e67
+=======
+    private getPlayerDetails(name: string, item: string): PlayerDetails {
+        const received = this.getReceivedBy(name);
+>>>>>>> branch
 
         const hasItem = received.find((x) => x.name === item.name);
         const weapons = received.filter((x) => x.category === 'weapon');
