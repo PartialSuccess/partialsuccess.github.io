@@ -22,5 +22,9 @@ nav {
 textarea {
     resize: none;
     height: 1000px;
-    width: 300px;
+    width: 330px;
+}
+.queue {
+    height: 300px;
+    overflow-y: scroll;
 }

@@ -46,7 +46,7 @@ export const BIS_TIER = [
     'Timeless'
 ];
 
-export const BIS_OTHER = [
+export const BIS_GENERAL = [
     'Zetsumei',
     'Taldia',
     'Charmander',
@@ -95,7 +95,7 @@ export const BIS_OTHER = [
     'Timeless'
 ];
 
-export const WEAPON = [
+export const WEAPONS = [
     'Helinos',
     'Rhonto',
     'Serethiel',

@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { DROPPED_LOOT } from 'src/assets/dropped-loot';
 import { AVAILABLE_LOOT } from 'src/assets/available-loot';
 import { ROSTER } from 'src/assets/roster';
+import { BIS_TIER, BIS_GENERAL, WEAPONS } from 'src/assets/queue';
 import { ATTENDANCE } from 'src/assets/attendance';
 import { Observable } from 'rxjs';
 import { debounceTime, distinctUntilChanged, map } from 'rxjs/operators';
@@ -14,6 +15,9 @@ import { RaidManager } from './raid.manager';
     styleUrls: ['./main.component.css']
 })
 export class MainComponent implements OnInit {
+    public BisTierQueue: string[] = BIS_TIER;
+    public BisGeneralQueue: string[] = BIS_GENERAL;
+    public WeaponQueue: string[] = WEAPONS;
     public DroppedLoot: DroppedItem[];
     public AvailableLoot: Item[] = AVAILABLE_LOOT;
     public ItemIndex: string[] = AVAILABLE_LOOT.map((x) => x.name);

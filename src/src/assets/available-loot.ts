@@ -4,70 +4,80 @@ export const AVAILABLE_LOOT = [
         priority: ['hunter'],
         category: 'weapon',
         slot: 'weapon',
-        quality: 'bis'
+        quality: 'bis',
+        score: 4
     },
     {
         name: 'Aurastone Hammer',
         priority: ['healer'],
         category: 'weapon',
         slot: 'weapon',
-        quality: 'bis'
+        quality: 'bis',
+        score: 1
     },
     {
         name: 'Azuresong Mageblade',
         priority: ['caster', 'paladin'],
         category: 'weapon',
         slot: 'weapon',
-        quality: 'bis'
+        quality: 'bis',
+        score: 4
     },
     {
         name: 'Bindings of the Windseeker (Left)',
         priority: ['tank', 'rogue'],
         category: 'weapon',
         slot: 'weapon',
-        quality: 'bis'
+        quality: 'bis',
+        score: 4
     },
     {
         name: 'Bindings of the Windseeker (Right)',
         priority: ['tank', 'rogue'],
         category: 'weapon',
         slot: 'weapon',
-        quality: 'bis'
+        quality: 'bis',
+        score: 4
     },
     {
         name: 'Blastershot Launcher',
         priority: ['rogue', 'warrior'],
         category: 'general',
         slot: 'weapon',
-        quality: 'bis'
+        quality: 'bis',
+        score: 2
     },
     {
         name: 'Bonereaver\'s Edge',
         priority: ['warrior'],
         category: 'weapon',
         slot: 'weapon',
-        quality: 'bis'
+        quality: 'bis',
+        score: 4
     },
     {
         name: 'Brutality Blade',
         priority: ['melee'],
         category: 'weapon',
         slot: 'weapon',
-        quality: 'bis'
+        quality: 'bis',
+        score: 2
     },
     {
         name: 'Core Hound Tooth',
         priority: ['melee'],
         category: 'weapon',
         slot: 'weapon',
-        quality: 'bis'
+        quality: 'bis',
+        score: 2
     },
     {
         name: 'Drillborer Disk',
         priority: ['tank', 'warrior'],
         category: 'general',
         slot: 'weapon',
-        quality: 'bis'
+        quality: 'bis',
+        score: 4
     },
     {
         name: 'Earthshaker',

@@ -1,3 +1,24 @@
+<div class="players-container">
+    <div class="players">
+        <h4>Bis Tier</h4>
+        <div class="queue">
+            <div *ngFor="let player of BisTierQueue">{{player}}</div>
+        </div>
+    </div>
+    <div class="players">
+        <h4>Bis General</h4>
+        <div class="queue">
+            <div *ngFor="let player of BisGeneralQueue">{{player}}</div>
+        </div>
+    </div>
+    <div class="players">
+        <h4>Weapons</h4>
+        <div class="queue">
+            <div *ngFor="let player of WeaponQueue">{{player}}</div>
+        </div>
+    </div>
+</div>
+
 <nav>
     <label for="typeahead-basic">Item Lookup </label>
     <input id="typeahead-basic" type="text" class="form-control" [(ngModel)]="target" (ngModelChange)="update($event)"
