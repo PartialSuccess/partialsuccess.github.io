@@ -8,6 +8,7 @@ import { Observable } from 'rxjs';
 import { debounceTime, distinctUntilChanged, map } from 'rxjs/operators';
 import { DroppedItem, Item, Player, Players, PlayerDetails } from './models';
 import { RaidManager } from './raid.manager';
+import { BOSS_LOOT } from 'src/assets/boss-loot';
 
 @Component({
     selector: 'app-main',
@@ -15,6 +16,7 @@ import { RaidManager } from './raid.manager';
     styleUrls: ['./main.component.css']
 })
 export class MainComponent implements OnInit {
+    public BossLoot = BOSS_LOOT;
     public BisTierQueue: string[] = BIS_TIER;
     public BisGeneralQueue: string[] = BIS_GENERAL;
     public WeaponQueue: string[] = WEAPONS;
@@ -47,6 +49,38 @@ export class MainComponent implements OnInit {
     source: '${x.source}'
 }`).join(',');
         });
+    }
+
+    public getValidRecipients(target: string) {
+        const item = this.AvailableLoot.find((x) => x.name.toLowerCase() === target.toLowerCase());
+        if (item == null) { return; }
+        const targetPlayers = this.getPossibleRecipients(item.priority);
+
+        const players = {
+            needItem: [],
+            needItemAlt: [],
+            haveItem: []
+        };
+
+        for (const target of targetPlayers) {
+            const details = this.getPlayerDetails(target.name, item);
+            const hasItem = details.all.find((x) => x.name === item.name);
+
+            if (target.status === 'inactive') {
+                // do nothing
+            } else if (hasItem) {
+                players.haveItem.push(details);
+            } else if (target.status === 'active') {
+                players.needItem.push(details);
+            } else if (target.status === 'alternate') {
+                players.needItemAlt.push(details);
+            }
+        }
+
+        const need = players.needItem.map((x) => x.name).join(', ');
+        // let needAlt = players.needItemAlt.map((x) => x.name).join(', ');
+
+        return `${need}`;
     }
 
     private setDroppedLoot(currentLoot: DroppedItem[]) {
@@ -84,6 +118,11 @@ export class MainComponent implements OnInit {
     private getPlayerDetails(player: string, item: Item): PlayerDetails {
         const received = this.getReceivedBy(player);
 
+        let hasBetter;
+        if (item.name === 'Choker of Enlightenment') {
+            hasBetter = received.find((x) => x.name === 'Choker of the Fire Lord');
+        }
+
         const hasItem = received.find((x) => x.name === item.name);
         const weapons = received.filter((x) => x.category === 'weapon');
         const bis = received.filter((x) => x.quality === 'bis');
@@ -100,7 +139,7 @@ export class MainComponent implements OnInit {
 
         return {
             name: player,
-            neededItem: hasItem ? null : item,
+            neededItem: hasItem == null && hasBetter == null ? null : item,
             all: received,
             weapons: weapons.map(nameMapper).join(', '),
             bis: {

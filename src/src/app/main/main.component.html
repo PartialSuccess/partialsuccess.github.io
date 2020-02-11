@@ -1,4 +1,16 @@
-<div class="players-container">
+<div>
+    <div *ngFor="let boss of BossLoot">
+        <h4>{{boss.name}}</h4>
+        <table style="width: 100%">
+            <tr *ngFor="let item of boss.loot">
+                <td style="text-align: left;">{{item}}</td>
+                <td style="text-align: left;">{{getValidRecipients(item)}}</td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<!-- <div class="players-container">
     <div class="players">
         <h4>Bis Tier</h4>
         <div class="queue">
@@ -44,4 +56,4 @@
 
         </textarea>
     </div>
-</div>
+</div> -->
